@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <eworkset>
+    <port>COM8</port>
+    <speed>115200</speed>
+    <pariti>0</pariti>
+    <stopb>1</stopb>
+    <dbit>8</dbit>
+  </eworkset>
+</DocumentElement>

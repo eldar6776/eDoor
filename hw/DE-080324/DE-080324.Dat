@@ -1,0 +1,30 @@
+﻿Field=#~Integer~#~50|Field=Comment~String~Comment~100|Field=Description~String~Description~100|Field=Designator~String~Designator~100|Field=Footprint~String~Footprint~100|Field=LibRef~String~LibRef~100|Field=Quantity~Integer~Quantity~100|ReportField=Currency~<none>|ReportField=ProductionQuantity~1|ReportField=ProjectFileName~DE-080324.PrjPcb|ReportField=ProjectFullPath~I:\ProjektiOtvoreni\Coloseum\hw\DE-080324\DE-080324.PrjPcb|ReportField=Title~Bill of Materials For Project [DE-080324.PrjPcb] (No PCB Document Selected)|ReportField=TotalQuantity~55|ReportField=ReportTime~16:33:30|ReportField=ReportDate~11. 3. 2024.|ReportField=ReportDateTime~11. 3. 2024. 16:33:30|ReportField=OutputName~Bill of Materials|ReportField=OutputType~BOM_PartType|ReportField=GeneratorName~BOM|ReportField=GeneratorDescription~Bill of Materials|ReportField=VariantName~None|ReportField=Address1~Braće Mulić 81|ReportField=Address2~71000 Sarajevo|ReportField=Address3~Federacija BiH|ReportField=Address4~Bosna i Hercegovina|ReportField=Application_BuildNumber~|ReportField=ApprovedBy~|ReportField=Author~eldar6776@hotmail.com|ReportField=CheckedBy~|ReportField=CompanyName~|ReportField=ConfigurationParameters~|ReportField=ConfiguratorName~|ReportField=CurrentDate~11. 3. 2024.|ReportField=CurrentTime~16:31:38|ReportField=Date~|ReportField=DocumentFullPathAndName~I:\ProjektiOtvoreni\Coloseum\hw\DE-080324\DE-080324.SchDoc|ReportField=DocumentName~DE-080324.SchDoc|ReportField=DocumentNumber~1|ReportField=DrawnBy~Eldar Dedić|ReportField=Engineer~|ReportField=ImagePath~|ReportField=IsUserConfigurable~|ReportField=ModifiedDate~9. 3. 2024.|ReportField=Organization~JUBERA d.o.o.|ReportField=ProjectName~DE-080324.PrjPcb|ReportField=Revision~001|ReportField=Rule~|ReportField=SheetNumber~1|ReportField=SheetTotal~1|ReportField=Time~|ReportField=Title~Coloseum addressable RFID|ReportField=VersionControl_RevNumber~|ReportField=DataSourceFileName~DE-080324.PrjPcb|ReportField=DataSourceFullPath~I:\ProjektiOtvoreni\Coloseum\hw\DE-080324\DE-080324.PrjPcb|ReportField=PCBConfigurationName~Sources|ReportField=Item~|ReportField=ItemRevision~|ReportField=ItemAndRevision~|ReportField=ItemRevisionBase~|ReportField=ItemRevisionLevel1~|ReportField=ItemRevisionLevel2~|ReportField=ItemRevisionLevel1AndBase~|ReportField=ItemRevisionLevel2AndLevel1~
+1|6p8|Ceramic Chip Capacitor - Standard|C1, C2|0603|C0603|2
+2|100nF|Ceramic Chip Capacitor - Standard|C3, C4, C5, C8, C9, C13, C14, C16, C17|0603|C0603|9
+3|10nF|Ceramic Chip Capacitor - Standard|C6, C10|0603|C0603|2
+4|10uF|Ceramic Chip Capacitor - Standard|C7, C18, C19, C20|0805|C0805|4
+5|1uF|Ceramic Chip Capacitor - Standard|C11|0603|C0603|1
+6|22uF|Aluminum Electrolytic Capacitor, Radial Style with Long Leads: 47uF, 35V|C12, C15|CAPPR2-5X11|EKA00AA247F00|2
+7|RED_LED|Top Mount AS AlInGaP Red Oval Lens High Brightness|D1|2.0X1.25X1.2|HSMC-C540-F0001|1
+8|GREEN_LED|Top Mount AS AlInGaP Red Oval Lens High Brightness|D2|2.0X1.25X1.2|HSMC-C540-F0001|1
+9|STATUS_LED|Top Mount AS AlInGaP Red Oval Lens High Brightness|D3|2.0X1.25X1.2|HSMC-C540-F0001|1
+10|NF|General-purpose Diode|D4|SOD323|BAS321|1
+11|1N4001|Schottky Rectifier|D5|SMB|10BQ100|1
+12|Buzzer 5Vdc|5Vdc PCB buzzer|LS1|BUZZER|BUZZER|1
+13|TERMINAL BLOK 2|2 pinski terminal blok|P1, P4, P5|TERMINAL BLOK 2|TERMINAL BLOK 2|3
+14|ICSP|Header, 3-Pin|P2|HDR1X3|Header 3|1
+15|RDM6300|Header, 5-Pin|P3|HDR1X5|Header 5|1
+16|MMBT2222|NPN General-purpose Transistor|Q1|SOT23_N|BC817|1
+17|330R|Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0603 Size, 0.063 W|R1, R2, R3|ERA-0603|ERAV|3
+18|2K2|Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0603 Size, 0.063 W|R4, R5, R7, R8, R10, R14, R15|ERA-0603|ERAV|7
+19|10K|Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0603 Size, 0.063 W|R6, R11|ERA-0603|ERAV|2
+20|1K2|Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0603 Size, 0.063 W|R9, R13|ERA-0603|ERAV|2
+21|10R|Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0603 Size, 0.063 W|R12|ERA-0603|ERAV|1
+22|SW DIP-6|DIP Switch, 6 Position, SPST|S1|DIP-12/SW|SW DIP-6|1
+23|PC817|4-Pin Phototransistor Optocoupler|U1|SOP4|PC817 optocoupler|1
+24|STM32F030C8T6|ARM Cortex-M0 32-bit MCU, 64 KB Flash, 8 KB Internal RAM, 39 I/Os, 48-pin LQFP, -40 to 85 degC, Tray|U2|STM-LQFP48_N|STM32F030C8T6|1
+25|AT24C1024|2Kbit (256 x 8), 2-wire Bus Automotive Serial EEPROM with full memory Write Protect, 2.5V, 8-Pin TSSOP, Tape & Reel|U3|8A2_L|AT24C02B-TP25-T|1
+26|SN75176BD|Differential Bus Transceiver|U4|D008_L|SN75176BD|1
+27|L7805ABV|Precision 1A Regulator|U5|TO220ABN|L7805ABV|1
+28|REG1117-3.3|800mA and 1A Low Dropout Positive Regulator 2.85V, 3.3V, 5V, and Adjustable|U6|ZZ311|REG1117-3.3|1
+29|32.768MHz|Tuning Fork Crystal Unit|Y1|R26|R26-32.768|1

@@ -1,0 +1,7 @@
+28.04.2024 18:33:10; mysqlExScalar; Table 'hotelbadem2022.logcont' doesn't exist in engine; insert into logcont(`idlog`, `logid`, `log`, `idkont`, `kard`, `vrijeme`, `upd` )values(1,8,,8,03206560532,2024-04-28 18:32:55,0)
+28.04.2024 18:33:30; mysqlExScalar; Table 'hotelbadem2022.logcont' doesn't exist in engine; insert into logcont(`idlog`, `logid`, `log`, `idkont`, `kard`, `vrijeme`, `upd` )values(1,8,,8,03206560532,2024-04-28 18:33:21,0)
+02.05.2024 18:57:47; mysqlExScalar; Unable to connect to any of the specified MySQL hosts.; insert into logcont(`idlog`, `logid`, `log`, `idkont`, `kard`, `vrijeme`, `upd` )values(1,8,,8,60539853,2024-05-02 18:57:44,0)
+02.05.2024 18:57:49; mysqlExScalar; Unable to connect to any of the specified MySQL hosts.; insert into logcont(`idlog`, `logid`, `log`, `idkont`, `kard`, `vrijeme`, `upd` )values(1,8,,3,60539481,2024-05-02 18:57:47,0)
+02.05.2024 18:57:51; mysqlExScalar; Unable to connect to any of the specified MySQL hosts.; insert into logcont(`idlog`, `logid`, `log`, `idkont`, `kard`, `vrijeme`, `upd` )values(1,8,,5,5656379,2024-05-02 18:57:49,0)
+02.05.2024 18:57:54; mysqlExScalar; Unable to connect to any of the specified MySQL hosts.; insert into logcont(`idlog`, `logid`, `log`, `idkont`, `kard`, `vrijeme`, `upd` )values(1,8,,7,60623926,2024-05-02 18:57:51,0)
+02.05.2024 18:57:56; mysqlExScalar; Unable to connect to any of the specified MySQL hosts.; insert into logcont(`idlog`, `logid`, `log`, `idkont`, `kard`, `vrijeme`, `upd` )values(1,8,,8,57327080,2024-05-02 18:57:54,0)

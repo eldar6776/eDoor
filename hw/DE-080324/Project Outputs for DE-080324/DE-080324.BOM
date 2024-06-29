@@ -1,0 +1,35 @@
+Bill of Material for 
+On 11. 3. 2024. at 16:23:19
+
+ Comment             Pattern     Quantity  Components
+------------------------------------------------------------------------------
+ 100nF               0603             9    C3, C4, C5, C8, C9, C13, C14 Ceramic Chip Capacitor - Standard 
+                                           C16, C17
+ 10K                 ERA-0603         2    R6, R11                      Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0603 Size, 0.063 W 
+ 10nF                0603             2    C6, C10                      Ceramic Chip Capacitor - Standard 
+ 10R                 ERA-0603         1    R12                          Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0603 Size, 0.063 W 
+ 10uF                0805             4    C7, C18, C19, C20            Ceramic Chip Capacitor - Standard 
+ 1K2                 ERA-0603         2    R9, R13                      Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0603 Size, 0.063 W 
+ 1N4001              SMB              1    D5                           Schottky Rectifier   
+ 1uF                 0603             1    C11                          Ceramic Chip Capacitor - Standard 
+ 22uF                CAPPR2-5X11      2    C12, C15                     Aluminum Electrolytic Capacitor, Radial Style with Long Leads: 47uF, 35V 
+ 2K2                 ERA-0603         7    R4, R5, R7, R8, R10, R14, R15 Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0603 Size, 0.063 W 
+ 32.768MHz           R26              1    Y1                           Tuning Fork Crystal Unit 
+ 330R                ERA-0603         3    R1, R2, R3                   Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0603 Size, 0.063 W 
+ 6p8                 0603             2    C1, C2                       Ceramic Chip Capacitor - Standard 
+ AT24C1024           8A2_L            1    U3                           2Kbit (256 x 8), 2-wire Bus Automotive Serial EEPROM with full memory Write Protect, 2.5V, 8-Pin TSSOP, Tape & Reel 
+ Buzzer 5Vdc         BUZZER           1    LS1                          5Vdc PCB buzzer      
+ GREEN_LED           2.0X1.25X1.2     1    D2                           Top Mount AS AlInGaP Red Oval Lens High Brightness 
+ ICSP                HDR1X3           1    P2                           Header, 3-Pin        
+ L7805ABV            TO220ABN         1    U5                           Precision 1A Regulator 
+ MMBT2222            SOT23_N          1    Q1                           NPN General-purpose Transistor 
+ NF                  SOD323           1    D4                           General-purpose Diode 
+ PC817               SOP4             1    U1                           4-Pin Phototransistor Optocoupler 
+ RDM6300             HDR1X5           1    P3                           Header, 5-Pin        
+ RED_LED             2.0X1.25X1.2     1    D1                           Top Mount AS AlInGaP Red Oval Lens High Brightness 
+ REG1117-3.3         ZZ311            1    U6                           800mA and 1A Low Dropout Positive Regulator 2.85V, 3.3V, 5V, and Adjustable 
+ SN75176BD           D008_L           1    U4                           Differential Bus Transceiver 
+ STATUS_LED          2.0X1.25X1.2     1    D3                           Top Mount AS AlInGaP Red Oval Lens High Brightness 
+ STM32F030C8T6       STM-LQFP48_N     1    U2                           ARM Cortex-M0 32-bit MCU, 64 KB Flash, 8 KB Internal RAM, 39 I/Os, 48-pin LQFP, -40 to 85 degC, Tray 
+ SW DIP-6            DIP-12/SW        1    S1                           DIP Switch, 6 Position, SPST 
+ TERMINAL BLOK 2     TERMINAL BLOK 2    3    P1, P4, P5                   2 pinski terminal blok 

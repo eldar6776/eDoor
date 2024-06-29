@@ -1,0 +1,27 @@
+
+RS485 PAKET KOMANDE ČITAČU:
+-----------------------------
+BAJT 0 = SOH (standardni ASCII "start of header" kontrolni char, 1 decimalno, 0x01 hexadecimalno)
+BAJT 1 = ADRESA ČITAČA KARTICA
+BAJT 2 = DUŽINA PAKETA (broj bajta korisnog dijela ovog paketa koji saljemo prijemniku pocevsi od i uključujući slijedeceg)
+BAJT 3 = KOMANDA	
+					GET_SYS_FLAG        0xA0 // traži flagove sistema
+					GET_CARD_CNT        0xA1 // broj kartica u eepromu
+					GET_CARD_ALL        0xA2 // traži sve kartice iz eeproma
+					GET_EVENT_CNT       0xA3 // broj događaja u eepromu
+					GET_EVENT_LAST      0xA4 // traži zadnji događaj iz eeproma
+					SET_SYS_FLAG        0xA5 // uključi/isključi/omogući/onemogući buzzer, led-ove, bravu
+					SET_SYS_TIME        0xA6 // podesi vrijeme sa parametrima u BCD formatu, dan ,datum,mjesec,godina,sat,minuta,sekunda
+					SET_SYS_RESTART     0xA7 // softwerski restart applikacije
+					SET_CARD_ONE        0xA8 // dodaj novu karticu u eeprom
+					DELETE_CARD_ONE     0xA9 // obrisi karticu iz eeproma
+					DELETE_CARD_ALL     0xAA // obrisi sve kartice iz eeproma
+					DELETE_EVENT_LAST   0xAB // obrisi zadnji događaj iz eeproma
+					DELETE_EVENT_ALL    0xAC // obrisi sve događaje iz eeproma
+					
+BAJT 4,5... = BROJ KARTICE ILI VRIJEME (ako se šalje broj kartice ili vrijeme) 
+
+
+BAJT ZADNJI - 2 = MSB CEKSUMA KOMANDE (16 bitni zbir svih bajta paketa, do prije ovog bajta)
+BAJT ZADNJI - 1 = LSB CEKSUMA KOMANDE 
+BAJT ZADNJI		= EOT (standardni ASCII "end of transmission" kontrolni char, 4 decimalno, 0x04 hexadecimalno)

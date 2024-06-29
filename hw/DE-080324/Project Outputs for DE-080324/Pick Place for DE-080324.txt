@@ -1,0 +1,68 @@
+Altium Designer Pick and Place Locations
+I:\ProjektiOtvoreni\Coloseum\hw\DE-080324\Project Outputs for DE-080324\Pick Place for DE-080324.txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       09/03/24
+Time:       16:46
+Revision:   0
+Variant:    No variations
+Units used: mil
+
+Designator Comment         Layer       Footprint       Center-X(mil) Center-Y(mil) Rotation Description                                                                                                         
+Y1         32.768MHz       TopLayer    R26             405.000       790.000       180      Tuning Fork Crystal Unit                                                                                            
+U6         REG1117-3.3     TopLayer    ZZ311           575.000       1645.001      90       800mA and 1A Low Dropout Positive Regulator 2.85V, 3.3V, 5V, and Adjustable                                         
+U5         L7805ABV        TopLayer    TO220ABN        1025.000      1595.000      90       Precision 1A Regulator                                                                                              
+U4         SN75176BD       TopLayer    D008_L          1340.000      740.000       0        Differential Bus Transceiver                                                                                        
+U3         AT24C1024       TopLayer    8A2_L           695.000       1180.000      270      2Kbit (256 x 8), 2-wire Bus Automotive Serial EEPROM with full memory Write Protect, 2.5V, 8-Pin TSSOP, Tape & Reel 
+U2         STM32F030C8T6   TopLayer    STM-LQFP48_N    675.000       735.000       0        ARM Cortex-M0 32-bit MCU, 64 KB Flash, 8 KB Internal RAM, 39 I/Os, 48-pin LQFP, -40 to 85 degC, Tray                
+U1         PC817           TopLayer    SOP4            1271.890      1215.000      0        4-Pin Phototransistor Optocoupler                                                                                   
+S1         SW DIP-6        TopLayer    DIP-12/SW       860.000       205.000       360      DIP Switch, 6 Position, SPST                                                                                        
+R15        2K2             TopLayer    ERA-0603        1210.000      575.000       360      Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0603 Size, 0.063 W               
+R14        2K2             TopLayer    ERA-0603        1110.000      785.000       270      Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0603 Size, 0.063 W               
+R13        1K2             TopLayer    ERA-0603        1170.000      785.000       270      Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0603 Size, 0.063 W               
+R12        10R             TopLayer    ERA-0603        370.000       490.000       360      Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0603 Size, 0.063 W               
+R11        10K             TopLayer    ERA-0603        1415.000      595.000       360      Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0603 Size, 0.063 W               
+R10        2K2             TopLayer    ERA-0603        200.000       1545.000      90       Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0603 Size, 0.063 W               
+R9         1K2             TopLayer    ERA-0603        200.000       1710.000      90       Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0603 Size, 0.063 W               
+R8         2K2             TopLayer    ERA-0603        475.000       1195.000      90       Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0603 Size, 0.063 W               
+R7         2K2             TopLayer    ERA-0603        535.000       1195.000      90       Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0603 Size, 0.063 W               
+R6         10K             TopLayer    ERA-0603        596.535       975.000       180      Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0603 Size, 0.063 W               
+R5         2K2             TopLayer    ERA-0603        795.000       1095.000      90       Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0603 Size, 0.063 W               
+R4         2K2             TopLayer    ERA-0603        595.000       1195.000      90       Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0603 Size, 0.063 W               
+R3         330R            TopLayer    ERA-0603        570.000       440.000       180      Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0603 Size, 0.063 W               
+R2         330R            TopLayer    ERA-0603        570.000       500.000       180      Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0603 Size, 0.063 W               
+R1         330R            TopLayer    ERA-0603        855.000       1095.000      90       Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0603 Size, 0.063 W               
+Q1         MMBT2222        TopLayer    SOT23_N         1233.661      450.000       360      NPN General-purpose Transistor                                                                                      
+P5         TERMINAL BLOK 2 TopLayer    TERMINAL_BLOK_2 1655.000      1623.425      360      2 pinski terminal blok                                                                                              
+P4         TERMINAL BLOK 2 TopLayer    TERMINAL_BLOK_2 1660.000      830.000       180      2 pinski terminal blok                                                                                              
+P3         RDM6300         TopLayer    HDR1X5          105.000       1545.000      270      Header, 5-Pin                                                                                                       
+P2         ICSP            TopLayer    HDR1X3          1210.000      1010.000      360      Header, 3-Pin                                                                                                       
+P1         TERMINAL BLOK 2 TopLayer    TERMINAL_BLOK_2 1660.000      1228.425      180      2 pinski terminal blok                                                                                              
+LS1        Buzzer 5Vdc     TopLayer    BUZZER          1585.000      285.000       90       5Vdc PCB buzzer                                                                                                     
+D5         1N4001          TopLayer    SMB             1405.000      1595.000      270      Schottky Rectifier                                                                                                  
+D4         NF              TopLayer    SOD323          1275.000      285.000       270      General-purpose Diode                                                                                               
+D3         STATUS_LED      TopLayer    2.0X1.25X1.2    815.000       1243.583      90       Top Mount AS AlInGaP Red Oval Lens High Brightness                                                                  
+D2         GREEN_LED       BottomLayer 2.0X1.25X1.2    530.000       1046.417      270      Top Mount AS AlInGaP Red Oval Lens High Brightness                                                                  
+D1         RED_LED         BottomLayer 2.0X1.25X1.2    530.000       845.000       90       Top Mount AS AlInGaP Red Oval Lens High Brightness                                                                  
+C20        10uF            TopLayer    0805            315.000       1740.000      360      Ceramic Chip Capacitor - Standard                                                                                   
+C19        10uF            TopLayer    0805            315.000       1545.000      360      Ceramic Chip Capacitor - Standard                                                                                   
+C18        10uF            TopLayer    0805            315.000       1645.000      360      Ceramic Chip Capacitor - Standard                                                                                   
+C17        100nF           TopLayer    0603            310.000       1460.000      360      Ceramic Chip Capacitor - Standard                                                                                   
+C16        100nF           TopLayer    0603            805.000       1705.000      90       Ceramic Chip Capacitor - Standard                                                                                   
+C15        22uF            TopLayer    CAPPR2-5X11     1220.000      1710.630      270      Aluminum Electrolytic Capacitor, Radial Style with Long Leads: 47uF, 35V                                            
+C14        100nF           TopLayer    0603            865.000       1705.000      90       Ceramic Chip Capacitor - Standard                                                                                   
+C13        100nF           TopLayer    0603            865.000       1530.000      270      Ceramic Chip Capacitor - Standard                                                                                   
+C12        22uF            TopLayer    CAPPR2-5X11     1220.000      1495.000      90       Aluminum Electrolytic Capacitor, Radial Style with Long Leads: 47uF, 35V                                            
+C11        1uF             TopLayer    0603            370.000       610.000       360      Ceramic Chip Capacitor - Standard                                                                                   
+C10        10nF            TopLayer    0603            370.000       550.000       360      Ceramic Chip Capacitor - Standard                                                                                   
+C9         100nF           TopLayer    0603            820.000       500.000       360      Ceramic Chip Capacitor - Standard                                                                                   
+C8         100nF           TopLayer    0603            400.000       995.000       360      Ceramic Chip Capacitor - Standard                                                                                   
+C7         10uF            TopLayer    0805            392.598       905.000       360      Ceramic Chip Capacitor - Standard                                                                                   
+C6         10nF            TopLayer    0603            200.000       1380.000      270      Ceramic Chip Capacitor - Standard                                                                                   
+C5         100nF           TopLayer    0603            1415.000      880.000       0        Ceramic Chip Capacitor - Standard                                                                                   
+C4         100nF           TopLayer    0603            370.000       670.000       0        Ceramic Chip Capacitor - Standard                                                                                   
+C3         100nF           TopLayer    0603            560.000       1300.000      360      Ceramic Chip Capacitor - Standard                                                                                   
+C2         6p8             TopLayer    0603            275.000       748.662       180      Ceramic Chip Capacitor - Standard                                                                                   
+C1         6p8             TopLayer    0603            275.000       831.338       180      Ceramic Chip Capacitor - Standard                                                                                   
