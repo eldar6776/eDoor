@@ -15,7 +15,7 @@ LifeCycleDefinitionGUID=
 RevisionNamingSchemeGUID=
 
 [OutputGroup1]
-Name=DE-080324.OutJob
+Name=Job Group
 Description=
 TargetOutputMedium=PDF
 VariantName=[No Variations]
@@ -86,7 +86,7 @@ OutputType3=BOM_PartType
 OutputName3=Bill of Materials
 OutputCategory3=Report
 OutputDocumentPath3=
-OutputVariantName3=
+OutputVariantName3=[No Variations]
 OutputEnabled3=1
 OutputEnabled3_OutputMedium1=0
 OutputEnabled3_OutputMedium2=3
@@ -99,7 +99,7 @@ Configuration3_Item1=CaptionAsName
 Configuration3_Name2=Filter
 Configuration3_Item2=545046300E5446696C74657257726170706572000D46696C7465722E416374697665090F46696C7465722E43726974657269610A04000000000000000000
 Configuration3_Name3=General
-Configuration3_Item3=OpenExported=True|AddToProject=True|ForceFit=False|NotFitted=False|Database=False|DatabasePriority=False|IncludePCBData=False|IncludeVaultData=False|IncludeAlternatives=False|ShowExportOptions=True|TemplateFilename=C:\Users\Public\Documents\Altium\AD17\Templates\BOM Default Template 95.xlt|BatchMode=5|FormWidth=950|FormHeight=661|SupplierProdQty=1|SupplierAutoQty=False|SupplierUseCachedPricing=False|SupplierCurrency=<none>
+Configuration3_Item3=TemplateFilename=BOM Default Template 95.xlt
 Configuration3_Name4=GroupOrder
 Configuration3_Item4=Comment=True|Footprint=True
 Configuration3_Name5=SortOrder
@@ -108,9 +108,9 @@ Configuration3_Name6=VisibleOrder
 Configuration3_Item6=Comment=100|Description=100|Designator=100|Footprint=100|LibRef=100|Quantity=100
 
 [PublishSettings]
-OutputFilePath2=I:\ProjektiOtvoreni\Coloseum\hw\DE-080324\.PDF
+OutputFilePath2=D:\ProjektiOtvoreni\eDoor\hw\DE-080324\.PDF
 ReleaseManaged2=0
-OutputBasePath2=I:\ProjektiOtvoreni\Coloseum\hw\DE-080324\
+OutputBasePath2=D:\ProjektiOtvoreni\eDoor\hw\DE-080324\
 OutputPathMedia2=
 OutputPathMediaValue2=
 OutputPathOutputer2=[Output Type]
@@ -187,7 +187,7 @@ WmvVideoCodecName4=Windows Media Video V7
 WmvQuality4=80
 
 [GeneratedFilesSettings]
-RelativeOutputPath2=I:\ProjektiOtvoreni\Coloseum\hw\DE-080324\.PDF
+RelativeOutputPath2=D:\ProjektiOtvoreni\eDoor\hw\DE-080324\.PDF
 OpenOutputs2=1
 RelativeOutputPath3=
 OpenOutputs3=1
