@@ -1,0 +1,19 @@
+Added Pin To Net: NetName=12V_0 Pin=Q2-2
+Added Pin To Net: NetName=12V_1 Pin=Q5-2
+Added Pin To Net: NetName=12V_2 Pin=Q7-2
+Added Pin To Net: NetName=12V_3 Pin=Q10-2
+Added Pin To Net: NetName=12V_4 Pin=Q12-2
+Added Pin To Net: NetName=12V_5 Pin=Q15-2
+Added Pin To Net: NetName=12V_6 Pin=Q19-2
+Added Pin To Net: NetName=12V_7 Pin=Q20-2
+Added Pin To Net: NetName=12V_0 Pin=R24-2
+Added Pin To Net: NetName=12V_1 Pin=R32-2
+Added Pin To Net: NetName=12V_2 Pin=R39-2
+Added Pin To Net: NetName=12V_3 Pin=R47-2
+Added Pin To Net: NetName=12V_4 Pin=R56-2
+Added Pin To Net: NetName=12V_5 Pin=R62-2
+Added Pin To Net: NetName=12V_6 Pin=R71-2
+Added Pin To Net: NetName=12V_7 Pin=R77-2
+Added Member To Class: ClassName=DE-010824 Member=Component R11 2K2
+Added Member To Class: ClassName=DE-010824 Member=Component R12 2K2
+Added Member To Class: ClassName=DE-010824 Member=Component U4 24AA01T-I/OT

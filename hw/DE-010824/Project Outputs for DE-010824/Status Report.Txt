@@ -1,0 +1,11 @@
+Output: Generates pick and place files
+Type  : Pick Place
+From  : Variant [[No Variations]] of Project [DE-010824.PrjPcb]
+   Generated File[Pick Place for DE-010824.txt]
+   Generated File[Pick Place for DE-010824.csv]
+
+
+Files Generated   : 2
+Documents Printed : 0
+
+Finished Output Generation At 13:45:57 On 12. 8. 2024.

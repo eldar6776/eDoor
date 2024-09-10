@@ -24,15 +24,15 @@ namespace RubiconCtrlConf
         delegate void SetTextCallback(string text);
         /**
          *  jedan međuproces za dozivanje između procesa
-         */ 
+         */
         private Thread CallingThread = null;
 
         public Form1()
         {
             InitializeComponent();
-            
+
         }
-       
+
         private void cbxCommPort_GotFocus(object sender, EventArgs e)
         {
             string[] AvailableCOMPorts;
@@ -61,9 +61,9 @@ namespace RubiconCtrlConf
                 serialPort1.StopBits = System.IO.Ports.StopBits.One;
                 serialPort1.Parity = System.IO.Ports.Parity.None;
                 serialPort1.Handshake = System.IO.Ports.Handshake.None;
-               
+
                 serialPort1.Encoding = Encoding.GetEncoding(28591);
-                System.Text.Encoding.GetEncoding(28591); 
+                System.Text.Encoding.GetEncoding(28591);
 
                 try
                 {
@@ -85,7 +85,7 @@ namespace RubiconCtrlConf
                     controller_interface_address = Convert.ToInt32(cbxRubiconAddress.Text);
                     rs485_interface_address = Convert.ToInt32(cbxInterfaceAddress.Text);
                 }
-            }            
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -144,13 +144,13 @@ namespace RubiconCtrlConf
 
         private void cbxSelectCommand_SelectedIndexChanged(object sender, EventArgs e)
         {
-            strCmdSelected = cbxSelectCommand.Text; 
+            strCmdSelected = cbxSelectCommand.Text;
         }
 
         /**
          *  po jedna ovakva funkcija za svaku kontrolu na formi
          *  da ne komplikujemo poziv multifunkcije
-         */ 
+         */
         private void threadSetRtxBox1_Text()
         {
             this.SetRtxBox1_Text(strRtxBox1Text);
@@ -167,7 +167,7 @@ namespace RubiconCtrlConf
              * pa ako se razlikuju onda će funkcija pozvati samu sebe da bi promjenila id procesa koji je pozvao
              * ovu funkciju i tako ukrug dok god ne potrfi id procesa koji je stvorio kontrolu, te će onda 
              * napokon napisati slova u polje za text
-             */ 
+             */
             if (this.rtxTextBox1.InvokeRequired)
             {
                 SetTextCallback d = new SetTextCallback(SetRtxBox1_Text);
@@ -178,37 +178,40 @@ namespace RubiconCtrlConf
                 this.rtxTextBox1.Text += text;
             }
         }
-    //BAJT 0 = SOH(standardni ASCII "start of header" kontrolni char, 1 decimalno, 0x01 hexadecimalno)
-    //BAJT 1 = ADRESA RECEIVERA(adresa ČITAČA ili u odgovoru 0xFE adresa PC aplikacije) ili 0xFF brodkast adresa
-    //BAJT 2 = ADRESA TRANSMITERA(0xFE adresa PC aplikacije ili u odgovoru adresa ČITAČA)
-    //BAJT 3 = DUŽINA PAKETA(broj bajta korisnog dijela ovog paketa koji saljemo prijemniku pocevsi od i uključujući slijedeceg)
-    //BAJT 4 = KOMANDA
-    //                    GET_SYS_FLAG        0xA0 // traži flagove sistema
-    //                    GET_CARD_CNT        0xA1 // broj kartica u eepromu
-    //                    GET_CARD_PRESENT    0xA2 // traži kartice u eepromu
-    //                    GET_EVENT_CNT       0xA3 // broj događaja u eepromu
-    //                    GET_EVENT_LAST      0xA4 // traži zadnji događaj iz eeproma
+        //BAJT 0 = SOH(standardni ASCII "start of header" kontrolni char, 1 decimalno, 0x01 hexadecimalno)
+        //BAJT 1 = ADRESA RECEIVERA(adresa ČITAČA ili u odgovoru 0xFE adresa PC aplikacije) ili 0xFF brodkast adresa
+        //BAJT 2 = ADRESA TRANSMITERA(0xFE adresa PC aplikacije ili u odgovoru adresa ČITAČA)
+        //BAJT 3 = DUŽINA PAKETA(broj bajta korisnog dijela ovog paketa koji saljemo prijemniku pocevsi od i uključujući slijedeceg)
+        //BAJT 4 = KOMANDA
+        //                    GET_SYS_FLAG        0xA0 // traži flagove sistema
+        //                    GET_CARD_CNT        0xA1 // broj kartica u eepromu
+        //                    GET_CARD_PRESENT    0xA2 // traži kartice u eepromu
+        //                    GET_EVENT_CNT       0xA3 // broj događaja u eepromu
+        //                    GET_EVENT_LAST      0xA4 // traži zadnji događaj iz eeproma
 
-    //                    SET_SYS_TIME        0xB0 // podesi vrijeme u BCD formatu: dan/datum/mjesec/godina/sat/minuta/sekunda
-    //                    SET_SYS_RESTART     0xB1 // softwerski restart applikacije
-    //                    SET_CARD_ONE        0xB2 // dodaj novu karticu u eeprom
-    //                    SET_DOOR_OPEN       0xB3 // aktiviraj bravu
-    //                    SET_DOOR_TIME       0xB4 // podesi vrijeme brave
-    //                    SET_DOOR_ENABLE     0xB5 // omogući kontrolu brave
-    //                    SET_DOOR_DISABLE    0xB6 // onemogući kontrolu brave
-    //                    SET_BUZZER_ENABLE   0xB7 // omogući buzzer
-    //                    SET_BUZZER_DISABLE  0xB8 // onemogući buzzer
+        //                    SET_SYS_TIME        0xB0 // podesi vrijeme u BCD formatu: dan/datum/mjesec/godina/sat/minuta/sekunda
+        //                    SET_SYS_RESTART     0xB1 // softwerski restart applikacije
+        //                    SET_CARD_ONE        0xB2 // dodaj novu karticu u eeprom
+        //                    SET_DOOR_OPEN       0xB3 // aktiviraj bravu
+        //                    SET_DOOR_TIME       0xB4 // podesi vrijeme brave
+        //                    SET_DOOR_ENABLE     0xB5 // omogući kontrolu brave
+        //                    SET_DOOR_DISABLE    0xB6 // onemogući kontrolu brave
+        //                    SET_BUZZER_ENABLE   0xB7 // omogući buzzer
+        //                    SET_BUZZER_DISABLE  0xB8 // onemogući buzzer
 
-    //                    DELETE_CARD_ONE     0xC0 // obrisi karticu iz eeproma
-    //                    DELETE_CARD_ALL     0xC1 // obrisi sve kartice iz eeproma
-    //                    DELETE_EVENT_LAST   0xC2 // obrisi događaj prema datom indexu iz eeproma
-    //                    DELETE_EVENT_ALL    0xC3 // obrisi sve događaje iz eeproma
-                        
-    //BAJT 5,6... = BROJ KARTICE ILI VRIJEME(ako se šalje broj kartice ili vrijeme)
+        //                    DELETE_CARD_ONE     0xC0 // obrisi karticu iz eeproma
+        //                    DELETE_CARD_ALL     0xC1 // obrisi sve kartice iz eeproma
+        //                    DELETE_EVENT_LAST   0xC2 // obrisi događaj prema datom indexu iz eeproma
+        //                    DELETE_EVENT_ALL    0xC3 // obrisi sve događaje iz eeproma
 
-    //BAJT ZADNJI - 2 = MSB CEKSUMA KOMANDE(16 bitni zbir svih bajta paketa, do prije ovog bajta)
-    //BAJT ZADNJI - 1 = LSB CEKSUMA KOMANDE
-    //BAJT ZADNJI		= EOT(standardni ASCII "end of transmission" kontrolni char, 4 decimalno, 0x04 hexadecimalno)
+        //                    RESTART_ONE         0xD0 // restartuj jednu grupu citaca
+        //                    RESTART_ALL         0xD1 // restartuj sve citace
+
+        //BAJT 5,6... = BROJ KARTICE ILI VRIJEME(ako se šalje broj kartice ili vrijeme)
+
+        //BAJT ZADNJI - 2 = MSB CEKSUMA KOMANDE(16 bitni zbir svih bajta paketa, do prije ovog bajta)
+        //BAJT ZADNJI - 1 = LSB CEKSUMA KOMANDE
+        //BAJT ZADNJI		= EOT(standardni ASCII "end of transmission" kontrolni char, 4 decimalno, 0x04 hexadecimalno)
         private void btnSendCommand_Click(object sender, EventArgs e)
         {
             if (!serialPort1.IsOpen) return;
@@ -260,7 +263,7 @@ namespace RubiconCtrlConf
             else if (strCmdSelected == "DELETE_EVENT_LAST")
             {
                 buffer[4] = 0xa4; // prvo šalji komadu citaj zadnji dogadjaj
-                
+
             }
             else if (strCmdSelected == "DELETE_EVENT_ALL") buffer[4] = 0xc3;
             else if (strCmdSelected == "SET_SYS_TIME")
@@ -299,9 +302,15 @@ namespace RubiconCtrlConf
                 buffer[7] = Convert.ToByte((input >> 8) & 0xFF);
                 buffer[8] = Convert.ToByte(input & 0xFF);
             }
+            else if (strCmdSelected == "RESTART_ONE") buffer[4] = 0xd0;
+            else if (strCmdSelected == "RESTART_ALL")
+            {
+                buffer[1] = 0xff;
+                buffer[4] = 0xd1;
+            }
             /**
              *  check if command byte not empty then send 
-             */ 
+             */
             if (buffer[3] != 0x00)
             {
                 checksum = 0;
@@ -323,7 +332,7 @@ namespace RubiconCtrlConf
                 }
             }
         }
-        
+
         private void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
             // This event handler fires each time data is received by the serial port.
@@ -345,22 +354,20 @@ namespace RubiconCtrlConf
                 System.Buffer.BlockCopy(dest, 0, buffer, 0, buffer.Length);
             }
 
-                if ((buffer[0] == 0x01) &&
-                (buffer[1] == Convert.ToByte(rs485_interface_address & 0xff)) &&
-                (buffer[buffer[3] + 6U] == 0x04))
+            if ((buffer[0] == 0x01) && (buffer[1] == Convert.ToByte(rs485_interface_address & 0xff)) && (buffer[buffer[3] + 6U] == 0x04))
             {
                 checksum = 0;
                 for (uint i = 0; i < (buffer[3] + 4); i++)
                 {
                     checksum += buffer[i];
                 }
-                if (((buffer[buffer[3] + 4U]) == Convert.ToByte(checksum / 256)) && 
+                if (((buffer[buffer[3] + 4U]) == Convert.ToByte(checksum / 256)) &&
                     ((buffer[buffer[3] + 5U]) == Convert.ToByte(checksum & 0xff)))
                 {
                     if (buffer[4] == 0xa0)
                     {
                         strRtxBox1Text = "odgovor: GET_SYS_FLAG\n";
-                        if((buffer[5]  & 0x01) != 0) strRtxBox1Text += "log lista nije prazna\n";
+                        if ((buffer[5] & 0x01) != 0) strRtxBox1Text += "log lista nije prazna\n";
                         else strRtxBox1Text += "log lista prazna\n";
                         if ((buffer[5] & 0x02) != 0) strRtxBox1Text += "log lista puna\n";
                         if ((buffer[5] & 0x04) != 0) strRtxBox1Text += "citac aktivan\n";
@@ -384,7 +391,7 @@ namespace RubiconCtrlConf
                     else if (buffer[4] == 0xa2)
                     {
                         strRtxBox1Text = "odgovor: GET_CARD_PRESENT\n";
-                        if (buffer[5] == 0x06)  strRtxBox1Text += "kartica je u memoriji";
+                        if (buffer[5] == 0x06) strRtxBox1Text += "kartica je u memoriji";
                         else if (buffer[5] == 0x15) strRtxBox1Text += "kartica nije u memoriji";
                         strRtxBox1Text += "\n------------------------\n";
                         this.CallingThread = new Thread(new ThreadStart(this.threadSetRtxBox1_Text));
@@ -471,7 +478,7 @@ namespace RubiconCtrlConf
                             strRtxBox1Text += Convert.ToString(dan);
                             strRtxBox1Text += ".";
                             strRtxBox1Text += Convert.ToString(mjesec);
-                            strRtxBox1Text += "."; 
+                            strRtxBox1Text += ".";
                             strRtxBox1Text += Convert.ToString(godina);
                             strRtxBox1Text += "\n";
                             strRtxBox1Text += "vrijeme:";
@@ -641,7 +648,15 @@ namespace RubiconCtrlConf
                         this.CallingThread = new Thread(new ThreadStart(this.threadSetRtxBox1_Text));
                         this.CallingThread.Start();
                     }
-                    
+                    else if (buffer[4] == 0xD0)
+                    {
+                        strRtxBox1Text = "odgovor: RESTART_ONE\n";
+                        strRtxBox1Text += "kontroler restartovan";
+                        strRtxBox1Text += "\n------------------------\n";
+                        this.CallingThread = new Thread(new ThreadStart(this.threadSetRtxBox1_Text));
+                        this.CallingThread.Start();
+                    }
+
                 }
             }
         }
@@ -652,6 +667,6 @@ namespace RubiconCtrlConf
             rtxTextBox1.ScrollToCaret();
         }
 
-        
+
     }
 }

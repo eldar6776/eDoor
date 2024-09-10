@@ -1,0 +1,25 @@
+Removed Pin From Net: NetName=NetD8_1 Pin=D8-1
+Removed Pin From Net: NetName=NetD10_1 Pin=D10-1
+Removed Pin From Net: NetName=NetD13_1 Pin=D13-1
+Removed Pin From Net: NetName=NetD15_1 Pin=D15-1
+Removed Pin From Net: NetName=NetD18_1 Pin=D18-1
+Removed Pin From Net: NetName=NetD20_1 Pin=D20-1
+Removed Pin From Net: NetName=NetD23_1 Pin=D23-1
+Removed Pin From Net: NetName=NetD25_1 Pin=D25-1
+Change Component Footprint: Designator=F1 Old Footprint=RAD-0.2 New Footprint=PIN-W2/E2.8
+Added Pin To Net: NetName=DOOR_0 Pin=D8-1
+Added Pin To Net: NetName=DOOR_4 Pin=D10-1
+Added Pin To Net: NetName=DOOR_1 Pin=D13-1
+Added Pin To Net: NetName=DOOR_5 Pin=D15-1
+Added Pin To Net: NetName=DOOR_2 Pin=D18-1
+Added Pin To Net: NetName=DOOR_6 Pin=D20-1
+Added Pin To Net: NetName=DOOR_3 Pin=D23-1
+Added Pin To Net: NetName=DOOR_7 Pin=D25-1
+Change Net Name : Old Net Name=NetD8_1 New Net Name=NetF1_1
+Change Net Name : Old Net Name=NetD10_1 New Net Name=NetF2_1
+Change Net Name : Old Net Name=NetD13_1 New Net Name=NetF3_1
+Change Net Name : Old Net Name=NetD15_1 New Net Name=NetF4_1
+Change Net Name : Old Net Name=NetD18_1 New Net Name=NetF5_1
+Change Net Name : Old Net Name=NetD20_1 New Net Name=NetF6_1
+Change Net Name : Old Net Name=NetD23_1 New Net Name=NetF7_1
+Change Net Name : Old Net Name=NetD25_1 New Net Name=NetF8_1

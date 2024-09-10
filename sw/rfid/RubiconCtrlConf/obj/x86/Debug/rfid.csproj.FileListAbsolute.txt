@@ -17,3 +17,13 @@ G:\ProjektiOtvoreni\Coloseum\sw\rfid\RubiconCtrlConf\obj\x86\Debug\rfid.csproj.G
 G:\ProjektiOtvoreni\Coloseum\sw\rfid\RubiconCtrlConf\obj\x86\Debug\rfid.csproj.CoreCompileInputs.cache
 G:\ProjektiOtvoreni\Coloseum\sw\rfid\RubiconCtrlConf\obj\x86\Debug\rfid.exe
 G:\ProjektiOtvoreni\Coloseum\sw\rfid\RubiconCtrlConf\obj\x86\Debug\rfid.pdb
+D:\ProjektiOtvoreni\eDoor\sw\rfid\RubiconCtrlConf\bin\Debug\rfid.exe.config
+D:\ProjektiOtvoreni\eDoor\sw\rfid\RubiconCtrlConf\bin\Debug\rfid.exe
+D:\ProjektiOtvoreni\eDoor\sw\rfid\RubiconCtrlConf\bin\Debug\rfid.pdb
+D:\ProjektiOtvoreni\eDoor\sw\rfid\RubiconCtrlConf\obj\x86\Debug\rfid.csproj.AssemblyReference.cache
+D:\ProjektiOtvoreni\eDoor\sw\rfid\RubiconCtrlConf\obj\x86\Debug\RubiconCtrlConf.Form1.resources
+D:\ProjektiOtvoreni\eDoor\sw\rfid\RubiconCtrlConf\obj\x86\Debug\rfid.Properties.Resources.resources
+D:\ProjektiOtvoreni\eDoor\sw\rfid\RubiconCtrlConf\obj\x86\Debug\rfid.csproj.GenerateResource.cache
+D:\ProjektiOtvoreni\eDoor\sw\rfid\RubiconCtrlConf\obj\x86\Debug\rfid.csproj.CoreCompileInputs.cache
+D:\ProjektiOtvoreni\eDoor\sw\rfid\RubiconCtrlConf\obj\x86\Debug\rfid.exe
+D:\ProjektiOtvoreni\eDoor\sw\rfid\RubiconCtrlConf\obj\x86\Debug\rfid.pdb

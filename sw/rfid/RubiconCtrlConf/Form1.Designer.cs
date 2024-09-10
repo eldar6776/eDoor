@@ -215,7 +215,9 @@
             "DELETE_CARD_ONE",
             "DELETE_CARD_ALL",
             "DELETE_EVENT_LAST",
-            "DELETE_EVENT_ALL"});
+            "DELETE_EVENT_ALL",
+            "RESTART_ONE",
+            "RESTART_ALL"});
             this.cbxSelectCommand.Location = new System.Drawing.Point(9, 171);
             this.cbxSelectCommand.Name = "cbxSelectCommand";
             this.cbxSelectCommand.Size = new System.Drawing.Size(179, 21);

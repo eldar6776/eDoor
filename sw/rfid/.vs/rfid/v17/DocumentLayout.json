@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "G:\\ProjektiOtvoreni\\Coloseum\\sw\\rfid\\",
+  "WorkspaceRootPath": "D:\\ProjektiOtvoreni\\eDoor\\sw\\rfid\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B6CEB5B0-E5D6-41C2-BEAB-EE16FA70902B}|RubiconCtrlConf\\rfid.csproj|g:\\projektiotvoreni\\coloseum\\sw\\rfid\\rubiconctrlconf\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B6CEB5B0-E5D6-41C2-BEAB-EE16FA70902B}|RubiconCtrlConf\\rfid.csproj|d:\\projektiotvoreni\\edoor\\sw\\rfid\\rubiconctrlconf\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B6CEB5B0-E5D6-41C2-BEAB-EE16FA70902B}|RubiconCtrlConf\\rfid.csproj|solutionrelative:rubiconctrlconf\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B6CEB5B0-E5D6-41C2-BEAB-EE16FA70902B}|RubiconCtrlConf\\rfid.csproj|G:\\ProjektiOtvoreni\\Coloseum\\sw\\rfid\\rubiconctrlconf\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B6CEB5B0-E5D6-41C2-BEAB-EE16FA70902B}|RubiconCtrlConf\\rfid.csproj|D:\\ProjektiOtvoreni\\eDoor\\sw\\rfid\\rubiconctrlconf\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B6CEB5B0-E5D6-41C2-BEAB-EE16FA70902B}|RubiconCtrlConf\\rfid.csproj|solutionrelative:rubiconctrlconf\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -24,11 +24,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs",
-              "DocumentMoniker": "G:\\ProjektiOtvoreni\\Coloseum\\sw\\rfid\\RubiconCtrlConf\\Form1.cs",
+              "DocumentMoniker": "D:\\ProjektiOtvoreni\\eDoor\\sw\\rfid\\RubiconCtrlConf\\Form1.cs",
               "RelativeDocumentMoniker": "RubiconCtrlConf\\Form1.cs",
-              "ToolTip": "G:\\ProjektiOtvoreni\\Coloseum\\sw\\rfid\\RubiconCtrlConf\\Form1.cs",
+              "ToolTip": "D:\\ProjektiOtvoreni\\eDoor\\sw\\rfid\\RubiconCtrlConf\\Form1.cs",
               "RelativeToolTip": "RubiconCtrlConf\\Form1.cs",
-              "ViewState": "AQIAAOQAAAAAAAAAAAAlwO8AAAAQAAAA",
+              "ViewState": "AgIAABwBAAAAAAAAAAAYwDMBAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-24T15:54:36.219Z",
               "EditorCaption": ""
@@ -37,9 +37,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "G:\\ProjektiOtvoreni\\Coloseum\\sw\\rfid\\RubiconCtrlConf\\Form1.cs",
+              "DocumentMoniker": "D:\\ProjektiOtvoreni\\eDoor\\sw\\rfid\\RubiconCtrlConf\\Form1.cs",
               "RelativeDocumentMoniker": "RubiconCtrlConf\\Form1.cs",
-              "ToolTip": "G:\\ProjektiOtvoreni\\Coloseum\\sw\\rfid\\RubiconCtrlConf\\Form1.cs [Design]",
+              "ToolTip": "D:\\ProjektiOtvoreni\\eDoor\\sw\\rfid\\RubiconCtrlConf\\Form1.cs [Design]",
               "RelativeToolTip": "RubiconCtrlConf\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-12T09:50:03.426Z"

@@ -1,0 +1,45 @@
+﻿Field=#~Integer~#~50|Field=Comment~String~Comment~100|Field=Description~String~Description~100|Field=Designator~String~Designator~100|Field=Footprint~String~Footprint~100|Field=LibRef~String~LibRef~100|Field=Quantity~Integer~Quantity~100|ReportField=Currency~<none>|ReportField=ProductionQuantity~1|ReportField=ProjectFileName~DE-150824.PrjPcb|ReportField=ProjectFullPath~D:\ProjektiOtvoreni\eDoor\hw\DE-150824\DE-150824.PrjPcb|ReportField=Title~Bill of Materials For Project [DE-150824.PrjPcb] (No PCB Document Selected)|ReportField=TotalQuantity~84|ReportField=ReportTime~16:49:21|ReportField=ReportDate~16. 8. 2024.|ReportField=ReportDateTime~16. 8. 2024. 16:49:21|ReportField=OutputName~Bill of Materials|ReportField=OutputType~BOM_PartType|ReportField=GeneratorName~BOM|ReportField=GeneratorDescription~Bill of Materials|ReportField=VariantName~None|ReportField=Address1~Braće Mulić 81|ReportField=Address2~71000 Sarajevo|ReportField=Address3~Federacija BiH|ReportField=Address4~Bosna i Hercegovina|ReportField=Application_BuildNumber~|ReportField=ApprovedBy~|ReportField=Author~eldar6776@hotmail.com|ReportField=CheckedBy~|ReportField=CompanyName~|ReportField=CurrentDate~16. 8. 2024.|ReportField=CurrentTime~16:49:06|ReportField=Date~|ReportField=DocumentFullPathAndName~D:\ProjektiOtvoreni\eDoor\hw\DE-150824\DE-150824.SchDoc|ReportField=DocumentName~DE-150824.SchDoc|ReportField=DocumentNumber~DE-150824|ReportField=DrawnBy~Eldar Dedic|ReportField=Engineer~|ReportField=ImagePath~|ReportField=ModifiedDate~16. 8. 2024.|ReportField=Organization~JUBERA d.o.o.|ReportField=ProjectName~DE-150824.PrjPcb|ReportField=Revision~001|ReportField=Rule~|ReportField=SheetNumber~1|ReportField=SheetTotal~2|ReportField=Time~|ReportField=Title~ReaderBoard|ReportField=DataSourceFileName~DE-150824.PrjPcb|ReportField=DataSourceFullPath~D:\ProjektiOtvoreni\eDoor\hw\DE-150824\DE-150824.PrjPcb|ReportField=PCBConfigurationName~Sources|ReportField=Item~|ReportField=ItemRevision~|ReportField=ItemAndRevision~|ReportField=ItemRevisionBase~|ReportField=ItemRevisionLevel1~|ReportField=ItemRevisionLevel2~|ReportField=ItemRevisionLevel1AndBase~|ReportField=ItemRevisionLevel2AndLevel1~
+1|C0603|Ceramic Chip Capacitor - Standard|C1, C5, C6, C10, C11, C12, C14, C16, C17, C18, C22, C23, C24|0603|C0603|13
+2|C0805|Ceramic Chip Capacitor - Standard|C2, C4, C7, C13, C15|0805|C0805|5
+3|1nF|Dipped Radial Multilayer Ceramic Capacitor COG (NPO): 1pF, 50/63V|C3|VP31-2.5|VP31BA1R0CA|1
+4|20pF|Ceramic Chip Capacitor - Standard|C8, C9|0603|C0603|2
+5|100uF/35V|Midget Conformal Coated Solid Tantalum Chip Capacitor: 10uF, 20% Tolerance, 15 WVDC @ +85°C, Surge = 20V|C19, C20, C21|F|194D106X0015F2|3
+6|10BQ100|Schottky Rectifier|D1|SMB|10BQ100|1
+7|1N4148|General-purpose Diode|D2|SOD323|BAS321|1
+8|LED_RED|Blue Surface Mount Chip LED, Blue|D3|1.6X0.8X0.8|HSMB-C190|1
+9|LED_GREEN|Blue Surface Mount Chip LED, Blue|D4|1.6X0.8X0.8|HSMB-C190|1
+10|BLM15AG121|SMD chip inductor|L1|0402-A|Chip inductor|1
+11|Buzzer 5Vdc|5Vdc PCB buzzer|LS1|BUZZER|BUZZER|1
+12|ULINK ICSP|Header, 3-Pin|P1|HDR1X3|Header 3|1
+13|Header 3X2|Header, 3-Pin, Dual row|P2|HDR2X3|Header 3X2|1
+14|3 pin terminal|3 pinski terminal blok konektor|P3|3 PIN TERMINAL BLOCK  3,5mm|TERMINAL BLOK 3|1
+15|2 pin terminal|Terminal blok konektor 3,5 mm|P4|2 PIN TERMINAL BLOCK 3,5mm|TERMINAL BLOK 2|1
+16|PIEEZP|Surface Mount Quartz Crystal|PS1|PKM13EPYH4000-A0|PKM13EPYH4000-A0|1
+17|AO3400|N-channel Enhancement Mode Vertical D-MOSFET|Q1, Q3|SOT23_N|BSS123|2
+18|BSS123|N-channel Enhancement Mode Vertical D-MOSFET|Q2, Q4, Q5, Q6|SOT23_N|BSS123|4
+19|2K2|Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0805 Size, 0.1 W|R1, R8|ERA-0805|ERAS|2
+20|100R|Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0805 Size, 0.1 W|R2, R9|ERA-0805|ERAS|2
+21|10K|Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0805 Size, 0.1 W|R3, R10|ERA-0805|ERAS|2
+22|220K|Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0805 Size, 0.1 W|R4|ERA-0805|ERAS|1
+23|2K2|Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0603 Size, 0.063 W|R5, R6, R11, R12, R16, R17, R19, R20, R27|ERA-0603|ERAV|9
+24|22R|Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0805 Size, 0.1 W|R7|ERA-0805|ERAS|1
+25|NF|Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0805 Size, 0.1 W|R13, R14|ERA-0805|ERAS|2
+26|1M|Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0805 Size, 0.1 W|R15|ERA-0805|ERAS|1
+27|10K|Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0603 Size, 0.063 W|R18, R21, R23|ERA-0603|ERAV|3
+28|1K|Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0603 Size, 0.063 W|R22|ERA-0603|ERAV|1
+29|10R|Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0805 Size, 0.1 W|R24, R25|ERA-0805|ERAS|2
+30|1K2|Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0603 Size, 0.063 W|R26|ERA-0603|ERAV|1
+31|330R|Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0603 Size, 0.063 W|R28, R31|ERA-0603|ERAV|2
+32|4K7|Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0603 Size, 0.063 W|R29, R30|ERA-0603|ERAV|2
+33|SW DIP-6|DIP Switch, 6 Position, SPST|S1|DIP-12/SW|SW DIP-6|1
+34|HTRC110|HITAG reader chip|U1|SOIC-SL14_N|HTRC110|1
+35|TPD2E001-Q1|Automotive Catalog Low-Capacitance + / - 15 kV ESD-Protection Array for High-Speed Data Inter, 2 Channels, -40 to +85 degC, 5-pin SOT (DRL), Green (RoHS & no Sb/Br)|U2|DRL5_V|TPD2E001IDRLRQ1|1
+36|STM32F030K6T6|ARM Cortex-M0 32-bit MCU, 32 KB Flash, 4 KB Internal RAM, 26 I/Os, 32-pin LQFP, -40 to 85 degC, Tray|U3|STM-LQFP32_N|STM32F030K6T6|1
+37|24AA64/SN|64Kbit, 400kHz, 1.7V, I2C Serial EEPROM, 8-Pin SOIC 150mil, Commercial Temperature|U4|SOIC-SN8_N|24AA64/SN|1
+38|IRLR014TRLPBF|Self-Protected Low Side Driver with Temperature and Current Limit, 42 V, 10 A, Single N-Channel, 3-Pin DPAK, Pb-Free, Tape and Reel|U5|ONSC-DPAK-3-369C-01_V|NCV8408DTRKG|1
+39|TLV803MDBZR|Voltage Supervisor with Active-Low, Open Drain Reset, 1 Supply Monitored, -40 to 125 degC, 3-pin SOT-23 (DBZ), Green (RoHS & no Sb/Br)|U6|DBZ3_N|TLV803MDBZR|1
+40|SN75176BD|Differential Bus Transceiver|U7|D008_N|SN75176BD|1
+41|ESDS552|ESD Protection Array for AC Signal Data Interface, 2 Channels, -40 to +85 degC, 3-pin SC70 (DCK), Green (RoHS & no Sb/Br)|U8|DCK3_N|TPD2E007DCKR|1
+42|L7805CV|Positive Voltage Regulator, 5V, 3-Pin TO-220|U9|TO220|L7805CV|1
+43|REG1117-3.3|800mA and 1A Low Dropout Positive Regulator 2.85V, 3.3V, 5V, and Adjustable|U10|ZZ311|REG1117-3.3|1
+44|ECS-110-S-5P|Crystal Oscillator|Y1|CSM-7|ECS-110-S-5P|1

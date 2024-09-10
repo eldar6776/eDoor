@@ -1,0 +1,9 @@
+Change Component Footprint: Designator=F1 Old Footprint=RAD-0.2 New Footprint=PIN-W2/E2.8
+Change Component Footprint: Designator=F2 Old Footprint=RAD-0.2 New Footprint=PIN-W2/E2.8
+Change Component Footprint: Designator=F3 Old Footprint=RAD-0.2 New Footprint=PIN-W2/E2.8
+Change Component Footprint: Designator=F4 Old Footprint=RAD-0.2 New Footprint=PIN-W2/E2.8
+Change Component Footprint: Designator=F5 Old Footprint=RAD-0.2 New Footprint=PIN-W2/E2.8
+Change Component Footprint: Designator=F6 Old Footprint=RAD-0.2 New Footprint=PIN-W2/E2.8
+Change Component Footprint: Designator=F7 Old Footprint=RAD-0.2 New Footprint=PIN-W2/E2.8
+Change Component Footprint: Designator=F8 Old Footprint=RAD-0.2 New Footprint=PIN-W2/E2.8
+Added Pin To Net: NetName=VDD2 Pin=U8-5
