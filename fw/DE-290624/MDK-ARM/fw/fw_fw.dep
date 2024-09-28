@@ -159,7 +159,7 @@ I (..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_uart.h)(0x66805104)
 I (..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_uart_ex.h)(0x66805104)
 I (..\Common\common.h)(0x66805104)
 I (..\Core\Inc\logger.h)(0x66805104)
-I (..\Core\Inc\eeprom.h)(0x66805104)
+I (..\Core\Inc\eeprom.h)(0x66E3EF81)
 F (..\Core\Src\logger.c)(0x66805104)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F0xx_HAL_Driver/Inc -I ../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/TinyFrame -I ../Middlewares/LuxNET -I ../Common-I./RTE/_fw-IG:/Repository/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-IG:/Repository/Packs/Keil/STM32F0xx_DFP/2.1.1/Drivers/CMSIS/Device/ST/STM32F0xx/Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F030x8 -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F030x8 -DCARD_STACKER -DAPPLICATION -DUSE_WATCHDOG-o fw/logger.o -MD)
 I (..\Core\Inc\main.h)(0x66805104)
 I (..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal.h)(0x66805104)
@@ -200,8 +200,8 @@ I (..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_uart.h)(0x66805104)
 I (..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_uart_ex.h)(0x66805104)
 I (..\Common\common.h)(0x66805104)
 I (..\Core\Inc\logger.h)(0x66805104)
-I (..\Core\Inc\eeprom.h)(0x66805104)
-F (../Core/Src/main.c)(0x66805104)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F0xx_HAL_Driver/Inc -I ../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/TinyFrame -I ../Middlewares/LuxNET -I ../Common-I./RTE/_fw-IG:/Repository/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-IG:/Repository/Packs/Keil/STM32F0xx_DFP/2.1.1/Drivers/CMSIS/Device/ST/STM32F0xx/Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F030x8 -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F030x8 -DCARD_STACKER -DAPPLICATION -DUSE_WATCHDOG-o fw/main.o -MD)
+I (..\Core\Inc\eeprom.h)(0x66E3EF81)
+F (../Core/Src/main.c)(0x66E93F5D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F0xx_HAL_Driver/Inc -I ../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/TinyFrame -I ../Middlewares/LuxNET -I ../Common-I./RTE/_fw-IG:/Repository/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-IG:/Repository/Packs/Keil/STM32F0xx_DFP/2.1.1/Drivers/CMSIS/Device/ST/STM32F0xx/Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F030x8 -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F030x8 -DCARD_STACKER -DAPPLICATION -DUSE_WATCHDOG-o fw/main.o -MD)
 I (..\Core\Inc\main.h)(0x66805104)
 I (..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal.h)(0x66805104)
 I (..\Core\Inc\stm32f0xx_hal_conf.h)(0x66805104)
@@ -241,7 +241,7 @@ I (..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_uart.h)(0x66805104)
 I (..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_uart_ex.h)(0x66805104)
 I (..\Common\common.h)(0x66805104)
 I (..\Core\Inc\logger.h)(0x66805104)
-I (..\Core\Inc\eeprom.h)(0x66805104)
+I (..\Core\Inc\eeprom.h)(0x66E3EF81)
 I (C:\Keil\ARM\ARMCLANG\include\stdlib.h)(0x5DE051CA)
 F (../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c.c)(0x66805104)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F0xx_HAL_Driver/Inc -I ../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/TinyFrame -I ../Middlewares/LuxNET -I ../Common-I./RTE/_fw-IG:/Repository/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-IG:/Repository/Packs/Keil/STM32F0xx_DFP/2.1.1/Drivers/CMSIS/Device/ST/STM32F0xx/Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F030x8 -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F030x8 -DCARD_STACKER -DAPPLICATION -DUSE_WATCHDOG-o fw/stm32f0xx_hal_i2c.o -MD)
 I (..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal.h)(0x66805104)

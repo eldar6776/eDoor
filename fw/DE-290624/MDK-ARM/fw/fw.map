@@ -214,12 +214,12 @@ Section Cross References
     main.o(.ARM.exidx.text.init) refers to main.o(.text.init) for [Anonymous Symbol]
     main.o(.text.rfid) refers to stm32f0xx_hal_uart.o(.text.HAL_UART_AbortReceive) for HAL_UART_AbortReceive
     main.o(.text.rfid) refers to strtoul.o(.text) for strtoul
+    main.o(.text.rfid) refers to main.o(.text.enable_rfid_receiver) for enable_rfid_receiver
     main.o(.text.rfid) refers to main.o(.text.find_card) for find_card
     main.o(.text.rfid) refers to main.o(.text.card_valid) for card_valid
     main.o(.text.rfid) refers to main.o(.text.card_invalid) for card_invalid
     main.o(.text.rfid) refers to main.o(.text.new_event) for new_event
     main.o(.text.rfid) refers to stm32f0xx_hal.o(.text.HAL_GetTick) for HAL_GetTick
-    main.o(.text.rfid) refers to main.o(.text.enable_rfid_receiver) for enable_rfid_receiver
     main.o(.text.rfid) refers to main.o(.bss.sysfl) for sysfl
     main.o(.text.rfid) refers to main.o(.bss.rfcnt) for [Anonymous Symbol]
     main.o(.text.rfid) refers to main.o(.bss.rfid.rftmr) for [Anonymous Symbol]
@@ -2535,70 +2535,70 @@ Image Symbol Table
     __arm_cp.23_3                            0x08005d64   Number         4  main.o(.text.new_event)
     __arm_cp.23_4                            0x08005d68   Number         4  main.o(.text.new_event)
     __arm_cp.23_5                            0x08005d6c   Number         4  main.o(.text.new_event)
-    rfid                                     0x08005d71   Thumb Code   268  main.o(.text.rfid)
+    rfid                                     0x08005d71   Thumb Code   292  main.o(.text.rfid)
     [Anonymous Symbol]                       0x08005d70   Section        0  main.o(.text.rfid)
-    __arm_cp.10_0                            0x08005e60   Number         4  main.o(.text.rfid)
-    __arm_cp.10_1                            0x08005e64   Number         4  main.o(.text.rfid)
-    __arm_cp.10_2                            0x08005e68   Number         4  main.o(.text.rfid)
-    __arm_cp.10_3                            0x08005e6c   Number         4  main.o(.text.rfid)
-    __arm_cp.10_4                            0x08005e70   Number         4  main.o(.text.rfid)
-    __arm_cp.10_5                            0x08005e74   Number         4  main.o(.text.rfid)
-    __arm_cp.10_6                            0x08005e78   Number         4  main.o(.text.rfid)
-    rs485                                    0x08005e7d   Thumb Code   904  main.o(.text.rs485)
-    [Anonymous Symbol]                       0x08005e7c   Section        0  main.o(.text.rs485)
-    __arm_cp.11_0                            0x080061d4   Number         4  main.o(.text.rs485)
-    __arm_cp.11_1                            0x080061d8   Number         4  main.o(.text.rs485)
-    __arm_cp.11_2                            0x080061dc   Number         4  main.o(.text.rs485)
-    __arm_cp.11_3                            0x080061e0   Number         4  main.o(.text.rs485)
-    __arm_cp.11_4                            0x080061e4   Number         4  main.o(.text.rs485)
-    __arm_cp.11_7                            0x080061e8   Number         4  main.o(.text.rs485)
-    __arm_cp.11_8                            0x080061ec   Number         4  main.o(.text.rs485)
-    __arm_cp.11_9                            0x080061f0   Number         4  main.o(.text.rs485)
-    __arm_cp.11_10                           0x080061f4   Number         4  main.o(.text.rs485)
-    __arm_cp.11_11                           0x080061f8   Number         4  main.o(.text.rs485)
-    __arm_cp.11_12                           0x080061fc   Number         4  main.o(.text.rs485)
-    __arm_cp.11_13                           0x08006200   Number         4  main.o(.text.rs485)
-    save_door_tmr                            0x08006205   Thumb Code   156  main.o(.text.save_door_tmr)
-    [Anonymous Symbol]                       0x08006204   Section        0  main.o(.text.save_door_tmr)
-    __arm_cp.26_0                            0x0800629c   Number         4  main.o(.text.save_door_tmr)
-    save_flags                               0x080062a1   Thumb Code   152  main.o(.text.save_flags)
-    [Anonymous Symbol]                       0x080062a0   Section        0  main.o(.text.save_flags)
-    __arm_cp.19_0                            0x0800632c   Number         4  main.o(.text.save_flags)
-    __arm_cp.19_1                            0x08006330   Number         4  main.o(.text.save_flags)
-    __arm_cp.19_2                            0x08006334   Number         4  main.o(.text.save_flags)
-    [Anonymous Symbol]                       0x08006338   Section        0  main.o(.text.status)
-    __arm_cp.13_19                           0x08006600   Number         4  main.o(.text.status)
-    __arm_cp.13_23                           0x08006610   Number         4  main.o(.text.status)
-    __arm_cp.13_0                            0x08006864   Number         4  main.o(.text.status)
-    __arm_cp.13_1                            0x08006868   Number         4  main.o(.text.status)
-    __arm_cp.13_2                            0x0800686c   Number         4  main.o(.text.status)
-    __arm_cp.13_3                            0x08006870   Number         4  main.o(.text.status)
-    __arm_cp.13_6                            0x08006874   Number         4  main.o(.text.status)
-    __arm_cp.13_7                            0x08006878   Number         4  main.o(.text.status)
-    __arm_cp.13_8                            0x0800687c   Number         4  main.o(.text.status)
-    __arm_cp.13_9                            0x08006880   Number         4  main.o(.text.status)
-    __arm_cp.13_10                           0x08006884   Number         4  main.o(.text.status)
-    __arm_cp.13_11                           0x08006888   Number         4  main.o(.text.status)
-    __arm_cp.13_12                           0x0800688c   Number         4  main.o(.text.status)
-    __arm_cp.13_13                           0x08006890   Number         4  main.o(.text.status)
-    __arm_cp.13_14                           0x08006894   Number         4  main.o(.text.status)
-    __arm_cp.13_15                           0x08006898   Number         4  main.o(.text.status)
-    write_card                               0x0800689d   Thumb Code   344  main.o(.text.write_card)
-    [Anonymous Symbol]                       0x0800689c   Section        0  main.o(.text.write_card)
-    __arm_cp.25_0                            0x080069e8   Number         4  main.o(.text.write_card)
-    __arm_cp.25_1                            0x080069ec   Number         4  main.o(.text.write_card)
-    __arm_cp.25_2                            0x080069f0   Number         4  main.o(.text.write_card)
-    i.__aeabi_errno_addr                     0x080069f4   Section        0  errno.o(i.__aeabi_errno_addr)
-    i.__scatterload_copy                     0x080069fc   Section       14  handlers.o(i.__scatterload_copy)
-    i.__scatterload_null                     0x08006a0a   Section        2  handlers.o(i.__scatterload_null)
-    i.__scatterload_zeroinit                 0x08006a0c   Section       14  handlers.o(i.__scatterload_zeroinit)
-    .constdata                               0x08006a1a   Section      129  ctype_o.o(.constdata)
-    table                                    0x08006a9c   Data           4  ctype_o.o(.constdata)
-    .constdata                               0x08006a9c   Section        4  ctype_o.o(.constdata)
-    HAL_RCC_GetSysClockFreq.aPLLMULFactorTable 0x08006ab8   Data          16  stm32f0xx_hal_rcc.o(.rodata.HAL_RCC_GetSysClockFreq.aPLLMULFactorTable)
-    [Anonymous Symbol]                       0x08006ab8   Section        0  stm32f0xx_hal_rcc.o(.rodata.HAL_RCC_GetSysClockFreq.aPLLMULFactorTable)
-    HAL_RCC_GetSysClockFreq.aPredivFactorTable 0x08006ac8   Data          16  stm32f0xx_hal_rcc.o(.rodata.HAL_RCC_GetSysClockFreq.aPredivFactorTable)
-    [Anonymous Symbol]                       0x08006ac8   Section        0  stm32f0xx_hal_rcc.o(.rodata.HAL_RCC_GetSysClockFreq.aPredivFactorTable)
+    __arm_cp.10_0                            0x08005e78   Number         4  main.o(.text.rfid)
+    __arm_cp.10_1                            0x08005e7c   Number         4  main.o(.text.rfid)
+    __arm_cp.10_2                            0x08005e80   Number         4  main.o(.text.rfid)
+    __arm_cp.10_3                            0x08005e84   Number         4  main.o(.text.rfid)
+    __arm_cp.10_4                            0x08005e88   Number         4  main.o(.text.rfid)
+    __arm_cp.10_5                            0x08005e8c   Number         4  main.o(.text.rfid)
+    __arm_cp.10_6                            0x08005e90   Number         4  main.o(.text.rfid)
+    rs485                                    0x08005e95   Thumb Code   904  main.o(.text.rs485)
+    [Anonymous Symbol]                       0x08005e94   Section        0  main.o(.text.rs485)
+    __arm_cp.11_0                            0x080061ec   Number         4  main.o(.text.rs485)
+    __arm_cp.11_1                            0x080061f0   Number         4  main.o(.text.rs485)
+    __arm_cp.11_2                            0x080061f4   Number         4  main.o(.text.rs485)
+    __arm_cp.11_3                            0x080061f8   Number         4  main.o(.text.rs485)
+    __arm_cp.11_4                            0x080061fc   Number         4  main.o(.text.rs485)
+    __arm_cp.11_7                            0x08006200   Number         4  main.o(.text.rs485)
+    __arm_cp.11_8                            0x08006204   Number         4  main.o(.text.rs485)
+    __arm_cp.11_9                            0x08006208   Number         4  main.o(.text.rs485)
+    __arm_cp.11_10                           0x0800620c   Number         4  main.o(.text.rs485)
+    __arm_cp.11_11                           0x08006210   Number         4  main.o(.text.rs485)
+    __arm_cp.11_12                           0x08006214   Number         4  main.o(.text.rs485)
+    __arm_cp.11_13                           0x08006218   Number         4  main.o(.text.rs485)
+    save_door_tmr                            0x0800621d   Thumb Code   156  main.o(.text.save_door_tmr)
+    [Anonymous Symbol]                       0x0800621c   Section        0  main.o(.text.save_door_tmr)
+    __arm_cp.26_0                            0x080062b4   Number         4  main.o(.text.save_door_tmr)
+    save_flags                               0x080062b9   Thumb Code   152  main.o(.text.save_flags)
+    [Anonymous Symbol]                       0x080062b8   Section        0  main.o(.text.save_flags)
+    __arm_cp.19_0                            0x08006344   Number         4  main.o(.text.save_flags)
+    __arm_cp.19_1                            0x08006348   Number         4  main.o(.text.save_flags)
+    __arm_cp.19_2                            0x0800634c   Number         4  main.o(.text.save_flags)
+    [Anonymous Symbol]                       0x08006350   Section        0  main.o(.text.status)
+    __arm_cp.13_19                           0x08006618   Number         4  main.o(.text.status)
+    __arm_cp.13_23                           0x08006628   Number         4  main.o(.text.status)
+    __arm_cp.13_0                            0x0800687c   Number         4  main.o(.text.status)
+    __arm_cp.13_1                            0x08006880   Number         4  main.o(.text.status)
+    __arm_cp.13_2                            0x08006884   Number         4  main.o(.text.status)
+    __arm_cp.13_3                            0x08006888   Number         4  main.o(.text.status)
+    __arm_cp.13_6                            0x0800688c   Number         4  main.o(.text.status)
+    __arm_cp.13_7                            0x08006890   Number         4  main.o(.text.status)
+    __arm_cp.13_8                            0x08006894   Number         4  main.o(.text.status)
+    __arm_cp.13_9                            0x08006898   Number         4  main.o(.text.status)
+    __arm_cp.13_10                           0x0800689c   Number         4  main.o(.text.status)
+    __arm_cp.13_11                           0x080068a0   Number         4  main.o(.text.status)
+    __arm_cp.13_12                           0x080068a4   Number         4  main.o(.text.status)
+    __arm_cp.13_13                           0x080068a8   Number         4  main.o(.text.status)
+    __arm_cp.13_14                           0x080068ac   Number         4  main.o(.text.status)
+    __arm_cp.13_15                           0x080068b0   Number         4  main.o(.text.status)
+    write_card                               0x080068b5   Thumb Code   344  main.o(.text.write_card)
+    [Anonymous Symbol]                       0x080068b4   Section        0  main.o(.text.write_card)
+    __arm_cp.25_0                            0x08006a00   Number         4  main.o(.text.write_card)
+    __arm_cp.25_1                            0x08006a04   Number         4  main.o(.text.write_card)
+    __arm_cp.25_2                            0x08006a08   Number         4  main.o(.text.write_card)
+    i.__aeabi_errno_addr                     0x08006a0c   Section        0  errno.o(i.__aeabi_errno_addr)
+    i.__scatterload_copy                     0x08006a14   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x08006a22   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x08006a24   Section       14  handlers.o(i.__scatterload_zeroinit)
+    .constdata                               0x08006a32   Section      129  ctype_o.o(.constdata)
+    table                                    0x08006ab4   Data           4  ctype_o.o(.constdata)
+    .constdata                               0x08006ab4   Section        4  ctype_o.o(.constdata)
+    HAL_RCC_GetSysClockFreq.aPLLMULFactorTable 0x08006ad0   Data          16  stm32f0xx_hal_rcc.o(.rodata.HAL_RCC_GetSysClockFreq.aPLLMULFactorTable)
+    [Anonymous Symbol]                       0x08006ad0   Section        0  stm32f0xx_hal_rcc.o(.rodata.HAL_RCC_GetSysClockFreq.aPLLMULFactorTable)
+    HAL_RCC_GetSysClockFreq.aPredivFactorTable 0x08006ae0   Data          16  stm32f0xx_hal_rcc.o(.rodata.HAL_RCC_GetSysClockFreq.aPredivFactorTable)
+    [Anonymous Symbol]                       0x08006ae0   Section        0  stm32f0xx_hal_rcc.o(.rodata.HAL_RCC_GetSysClockFreq.aPredivFactorTable)
     _errno                                   0x20000000   Data           4  errno.o(.data)
     .data                                    0x20000000   Section        4  errno.o(.data)
     buzz_cnt                                 0x20000011   Data           1  main.o(.bss.buzz_cnt)
@@ -2814,17 +2814,17 @@ Image Symbol Table
     mem_comp                                 0x08005ad5   Thumb Code    98  common.o(.text.mem_comp)
     mem_copy                                 0x08005b37   Thumb Code    54  common.o(.text.mem_copy)
     mem_set                                  0x08005b6d   Thumb Code    42  common.o(.text.mem_set)
-    status                                   0x08006339   Thumb Code  1380  main.o(.text.status)
-    __aeabi_errno_addr                       0x080069f5   Thumb Code     4  errno.o(i.__aeabi_errno_addr)
-    __rt_errno_addr                          0x080069f5   Thumb Code     0  errno.o(i.__aeabi_errno_addr)
-    __scatterload_copy                       0x080069fd   Thumb Code    14  handlers.o(i.__scatterload_copy)
-    __scatterload_null                       0x08006a0b   Thumb Code     2  handlers.o(i.__scatterload_null)
-    __scatterload_zeroinit                   0x08006a0d   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
-    __ctype_table                            0x08006a1a   Data         129  ctype_o.o(.constdata)
-    AHBPrescTable                            0x08006aa0   Data          16  system_stm32f0xx.o(.rodata.AHBPrescTable)
-    APBPrescTable                            0x08006ab0   Data           8  system_stm32f0xx.o(.rodata.APBPrescTable)
-    Region$$Table$$Base                      0x08006ad8   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08006af8   Number         0  anon$$obj.o(Region$$Table)
+    status                                   0x08006351   Thumb Code  1380  main.o(.text.status)
+    __aeabi_errno_addr                       0x08006a0d   Thumb Code     4  errno.o(i.__aeabi_errno_addr)
+    __rt_errno_addr                          0x08006a0d   Thumb Code     0  errno.o(i.__aeabi_errno_addr)
+    __scatterload_copy                       0x08006a15   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x08006a23   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x08006a25   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    __ctype_table                            0x08006a32   Data         129  ctype_o.o(.constdata)
+    AHBPrescTable                            0x08006ab8   Data          16  system_stm32f0xx.o(.rodata.AHBPrescTable)
+    APBPrescTable                            0x08006ac8   Data           8  system_stm32f0xx.o(.rodata.APBPrescTable)
+    Region$$Table$$Base                      0x08006af0   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08006b10   Number         0  anon$$obj.o(Region$$Table)
     SystemCoreClock                          0x20000004   Data           4  system_stm32f0xx.o(.data.SystemCoreClock)
     uwTickFreq                               0x20000008   Data           1  stm32f0xx_hal.o(.data.uwTickFreq)
     uwTickPrio                               0x2000000c   Data           4  stm32f0xx_hal.o(.data.uwTickPrio)
@@ -2854,9 +2854,9 @@ Memory Map of the image
 
   Image Entry point : 0x080000b5
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00006b08, Max: 0x00010000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00006b20, Max: 0x00010000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00006af8, Max: 0x00010000, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00006b10, Max: 0x00010000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -3026,38 +3026,38 @@ Memory Map of the image
     0x08005b6c   0x08005b6c   0x0000002a   Code   RO           81    .text.mem_set       common.o
     0x08005b96   0x08005b96   0x00000002   PAD
     0x08005b98   0x08005b98   0x000001d8   Code   RO          199    .text.new_event     main.o
-    0x08005d70   0x08005d70   0x0000010c   Code   RO          173    .text.rfid          main.o
-    0x08005e7c   0x08005e7c   0x00000388   Code   RO          175    .text.rs485         main.o
-    0x08006204   0x08006204   0x0000009c   Code   RO          205    .text.save_door_tmr  main.o
-    0x080062a0   0x080062a0   0x00000098   Code   RO          191    .text.save_flags    main.o
-    0x08006338   0x08006338   0x00000564   Code   RO          179    .text.status        main.o
-    0x0800689c   0x0800689c   0x00000158   Code   RO          203    .text.write_card    main.o
-    0x080069f4   0x080069f4   0x00000008   Code   RO         1157    i.__aeabi_errno_addr  mc_p.l(errno.o)
-    0x080069fc   0x080069fc   0x0000000e   Code   RO         1172    i.__scatterload_copy  mc_p.l(handlers.o)
-    0x08006a0a   0x08006a0a   0x00000002   Code   RO         1173    i.__scatterload_null  mc_p.l(handlers.o)
-    0x08006a0c   0x08006a0c   0x0000000e   Code   RO         1174    i.__scatterload_zeroinit  mc_p.l(handlers.o)
-    0x08006a1a   0x08006a1a   0x00000081   Data   RO         1130    .constdata          mc_p.l(ctype_o.o)
-    0x08006a9b   0x08006a9b   0x00000001   PAD
-    0x08006a9c   0x08006a9c   0x00000004   Data   RO         1131    .constdata          mc_p.l(ctype_o.o)
-    0x08006aa0   0x08006aa0   0x00000010   Data   RO         1090    .rodata.AHBPrescTable  system_stm32f0xx.o
-    0x08006ab0   0x08006ab0   0x00000008   Data   RO         1091    .rodata.APBPrescTable  system_stm32f0xx.o
-    0x08006ab8   0x08006ab8   0x00000010   Data   RO          466    .rodata.HAL_RCC_GetSysClockFreq.aPLLMULFactorTable  stm32f0xx_hal_rcc.o
-    0x08006ac8   0x08006ac8   0x00000010   Data   RO          467    .rodata.HAL_RCC_GetSysClockFreq.aPredivFactorTable  stm32f0xx_hal_rcc.o
-    0x08006ad8   0x08006ad8   0x00000020   Data   RO         1171    Region$$Table       anon$$obj.o
+    0x08005d70   0x08005d70   0x00000124   Code   RO          173    .text.rfid          main.o
+    0x08005e94   0x08005e94   0x00000388   Code   RO          175    .text.rs485         main.o
+    0x0800621c   0x0800621c   0x0000009c   Code   RO          205    .text.save_door_tmr  main.o
+    0x080062b8   0x080062b8   0x00000098   Code   RO          191    .text.save_flags    main.o
+    0x08006350   0x08006350   0x00000564   Code   RO          179    .text.status        main.o
+    0x080068b4   0x080068b4   0x00000158   Code   RO          203    .text.write_card    main.o
+    0x08006a0c   0x08006a0c   0x00000008   Code   RO         1157    i.__aeabi_errno_addr  mc_p.l(errno.o)
+    0x08006a14   0x08006a14   0x0000000e   Code   RO         1172    i.__scatterload_copy  mc_p.l(handlers.o)
+    0x08006a22   0x08006a22   0x00000002   Code   RO         1173    i.__scatterload_null  mc_p.l(handlers.o)
+    0x08006a24   0x08006a24   0x0000000e   Code   RO         1174    i.__scatterload_zeroinit  mc_p.l(handlers.o)
+    0x08006a32   0x08006a32   0x00000081   Data   RO         1130    .constdata          mc_p.l(ctype_o.o)
+    0x08006ab3   0x08006ab3   0x00000001   PAD
+    0x08006ab4   0x08006ab4   0x00000004   Data   RO         1131    .constdata          mc_p.l(ctype_o.o)
+    0x08006ab8   0x08006ab8   0x00000010   Data   RO         1090    .rodata.AHBPrescTable  system_stm32f0xx.o
+    0x08006ac8   0x08006ac8   0x00000008   Data   RO         1091    .rodata.APBPrescTable  system_stm32f0xx.o
+    0x08006ad0   0x08006ad0   0x00000010   Data   RO          466    .rodata.HAL_RCC_GetSysClockFreq.aPLLMULFactorTable  stm32f0xx_hal_rcc.o
+    0x08006ae0   0x08006ae0   0x00000010   Data   RO          467    .rodata.HAL_RCC_GetSysClockFreq.aPredivFactorTable  stm32f0xx_hal_rcc.o
+    0x08006af0   0x08006af0   0x00000020   Data   RO         1171    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08006af8, Size: 0x000006b8, Max: 0x00002000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08006b10, Size: 0x000006b8, Max: 0x00002000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x08006af8   0x00000004   Data   RW         1160    .data               mc_p.l(errno.o)
-    0x20000004   0x08006afc   0x00000004   Data   RW         1089    .data.SystemCoreClock  system_stm32f0xx.o
-    0x20000008   0x08006b00   0x00000001   Data   RW          535    .data.uwTickFreq    stm32f0xx_hal.o
-    0x20000009   0x08006b01   0x00000003   PAD
-    0x2000000c   0x08006b04   0x00000004   Data   RW          534    .data.uwTickPrio    stm32f0xx_hal.o
+    0x20000000   0x08006b10   0x00000004   Data   RW         1160    .data               mc_p.l(errno.o)
+    0x20000004   0x08006b14   0x00000004   Data   RW         1089    .data.SystemCoreClock  system_stm32f0xx.o
+    0x20000008   0x08006b18   0x00000001   Data   RW          535    .data.uwTickFreq    stm32f0xx_hal.o
+    0x20000009   0x08006b19   0x00000003   PAD
+    0x2000000c   0x08006b1c   0x00000004   Data   RW          534    .data.uwTickPrio    stm32f0xx_hal.o
     0x20000010        -       0x00000001   Zero   RW          216    .bss.buzz           main.o
     0x20000011        -       0x00000001   Zero   RW          220    .bss.buzz_cnt       main.o
-    0x20000012   0x08006b08   0x00000002   PAD
+    0x20000012   0x08006b20   0x00000002   PAD
     0x20000014        -       0x00000004   Zero   RW          221    .bss.buzz_tmr       main.o
     0x20000018        -       0x00000002   Zero   RW          244    .bss.card_cnt       main.o
     0x2000001a        -       0x00000001   Zero   RW          213    .bss.door           main.o
@@ -3074,10 +3074,10 @@ Memory Map of the image
     0x200001d8        -       0x00000010   Zero   RW          241    .bss.init.buf       main.o
     0x200001e8        -       0x00000001   Zero   RW          215    .bss.led            main.o
     0x200001e9        -       0x00000001   Zero   RW          224    .bss.led_cnt        main.o
-    0x200001ea   0x08006b08   0x00000002   PAD
+    0x200001ea   0x08006b20   0x00000002   PAD
     0x200001ec        -       0x00000004   Zero   RW          225    .bss.led_tmr        main.o
     0x200001f0        -       0x00000005   Zero   RW          144    .bss.logger         logger.o
-    0x200001f5   0x08006b08   0x00000003   PAD
+    0x200001f5   0x08006b20   0x00000003   PAD
     0x200001f8        -       0x00000004   Zero   RW          142    .bss.logger_list_count  logger.o
     0x200001fc        -       0x00000004   Zero   RW          145    .bss.logger_next_log_address  logger.o
     0x20000200        -       0x00000004   Zero   RW          143    .bss.logger_next_log_id  logger.o
@@ -3086,24 +3086,24 @@ Memory Map of the image
     0x2000020c        -       0x00000010   Zero   RW          235    .bss.rfbuf          main.o
     0x2000021c        -       0x00000001   Zero   RW          233    .bss.rfcnt          main.o
     0x2000021d        -       0x00000004   Zero   RW          246    .bss.rfid.buf       main.o
-    0x20000221   0x08006b08   0x00000003   PAD
+    0x20000221   0x08006b20   0x00000003   PAD
     0x20000224        -       0x00000004   Zero   RW          245    .bss.rfid.rftmr     main.o
     0x20000228        -       0x00000001   Zero   RW          247    .bss.rs485.i        main.o
     0x20000229        -       0x00000020   Zero   RW          248    .bss.rs485.resp     main.o
     0x20000249        -       0x00000001   Zero   RW          243    .bss.rsadd          main.o
     0x2000024a        -       0x00000040   Zero   RW          232    .bss.rsbuf          main.o
     0x2000028a        -       0x00000001   Zero   RW          230    .bss.rscnt          main.o
-    0x2000028b   0x08006b08   0x00000001   PAD
+    0x2000028b   0x08006b20   0x00000001   PAD
     0x2000028c        -       0x00000004   Zero   RW          229    .bss.rstmr          main.o
     0x20000290        -       0x00000014   Zero   RW          239    .bss.rtime          main.o
     0x200002a4        -       0x00000001   Zero   RW          222    .bss.sta_cnt        main.o
-    0x200002a5   0x08006b08   0x00000003   PAD
+    0x200002a5   0x08006b20   0x00000003   PAD
     0x200002a8        -       0x00000004   Zero   RW          223    .bss.sta_tmr        main.o
     0x200002ac        -       0x00000001   Zero   RW          214    .bss.state          main.o
     0x200002ad        -       0x00000001   Zero   RW          219    .bss.sysfl          main.o
-    0x200002ae   0x08006b08   0x00000002   PAD
+    0x200002ae   0x08006b20   0x00000002   PAD
     0x200002b0        -       0x00000004   Zero   RW          536    .bss.uwTick         stm32f0xx_hal.o
-    0x200002b4   0x08006b08   0x00000004   PAD
+    0x200002b4   0x08006b20   0x00000004   PAD
     0x200002b8        -       0x00000400   Zero   RW            1    STACK               startup_stm32f030x8.o
 
 
@@ -3114,30 +3114,30 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       546          0         16          0          0       7967   common.o
-      1228         64          0          0         21       2933   logger.o
-      6972        576          0          0        635      17228   main.o
-        28          8        180          0       1024        584   startup_stm32f030x8.o
-       246         36          0          5          4       5144   stm32f0xx_hal.o
-       442         36          0          0          0       5105   stm32f0xx_hal_cortex.o
-       146          0          0          0          0       3922   stm32f0xx_hal_crc.o
-       246          0          0          0          0       6281   stm32f0xx_hal_dma.o
-      1196         40          0          0          0       4477   stm32f0xx_hal_gpio.o
-      3392         40          0          0          0      37086   stm32f0xx_hal_i2c.o
-       310          0          0          0          0       4759   stm32f0xx_hal_i2c_ex.o
-       200         12          0          0          0       1628   stm32f0xx_hal_iwdg.o
-       784         56          0          0          0       9161   stm32f0xx_hal_msp.o
-        16          0          0          0          0       2844   stm32f0xx_hal_pwr.o
-      2380         96         32          0          0       7488   stm32f0xx_hal_rcc.o
-       412         16          0          0          0       2884   stm32f0xx_hal_rcc_ex.o
-      1596         32          0          0          0       9481   stm32f0xx_hal_rtc.o
-      5740         76          0          0          0      33718   stm32f0xx_hal_uart.o
-       216          4          0          0          0       6202   stm32f0xx_hal_uart_ex.o
-        56          8          0          0          0        878   stm32f0xx_it.o
-         2          0         24          4          0       1565   system_stm32f0xx.o
+       546          0         16          0          0       7977   common.o
+      1228         64          0          0         21       2943   logger.o
+      6996        576          0          0        635      17268   main.o
+        28          8        180          0       1024        596   startup_stm32f030x8.o
+       246         36          0          5          4       5154   stm32f0xx_hal.o
+       442         36          0          0          0       5115   stm32f0xx_hal_cortex.o
+       146          0          0          0          0       3932   stm32f0xx_hal_crc.o
+       246          0          0          0          0       6291   stm32f0xx_hal_dma.o
+      1196         40          0          0          0       4487   stm32f0xx_hal_gpio.o
+      3392         40          0          0          0      37096   stm32f0xx_hal_i2c.o
+       310          0          0          0          0       4769   stm32f0xx_hal_i2c_ex.o
+       200         12          0          0          0       1638   stm32f0xx_hal_iwdg.o
+       784         56          0          0          0       9171   stm32f0xx_hal_msp.o
+        16          0          0          0          0       2854   stm32f0xx_hal_pwr.o
+      2380         96         32          0          0       7498   stm32f0xx_hal_rcc.o
+       412         16          0          0          0       2894   stm32f0xx_hal_rcc_ex.o
+      1596         32          0          0          0       9491   stm32f0xx_hal_rtc.o
+      5740         76          0          0          0      33728   stm32f0xx_hal_uart.o
+       216          4          0          0          0       6212   stm32f0xx_hal_uart_ex.o
+        56          8          0          0          0        888   stm32f0xx_it.o
+         2          0         24          4          0       1575   system_stm32f0xx.o
 
     ----------------------------------------------------------------------
-     26180       1100        284         12       1704     171335   Object Totals
+     26204       1100        284         12       1704     171577   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         26          0          0          3         20          0   (incl. Padding)
 
@@ -3187,15 +3187,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     26966       1124        418         16       1704     171723   Grand Totals
-     26966       1124        418         16       1704     171723   ELF Image Totals
-     26966       1124        418         16          0          0   ROM Totals
+     26990       1124        418         16       1704     171965   Grand Totals
+     26990       1124        418         16       1704     171965   ELF Image Totals
+     26990       1124        418         16          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                27384 (  26.74kB)
+    Total RO  Size (Code + RO Data)                27408 (  26.77kB)
     Total RW  Size (RW Data + ZI Data)              1720 (   1.68kB)
-    Total ROM Size (Code + RO Data + RW Data)      27400 (  26.76kB)
+    Total ROM Size (Code + RO Data + RW Data)      27424 (  26.78kB)
 
 ==============================================================================
 

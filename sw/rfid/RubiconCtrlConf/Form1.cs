@@ -80,7 +80,7 @@ namespace RubiconCtrlConf
                     serialPort1.WriteTimeout = 5000;
                     cbxCommBaudrate.Enabled = false;
                     cbxCommPort.Enabled = false;
-                    cbxRubiconAddress.Enabled = false;
+                    //cbxRubiconAddress.Enabled = false;
                     cbxInterfaceAddress.Enabled = false;
                     controller_interface_address = Convert.ToInt32(cbxRubiconAddress.Text);
                     rs485_interface_address = Convert.ToInt32(cbxInterfaceAddress.Text);
@@ -215,7 +215,7 @@ namespace RubiconCtrlConf
         private void btnSendCommand_Click(object sender, EventArgs e)
         {
             if (!serialPort1.IsOpen) return;
-
+            controller_interface_address = Convert.ToInt32(cbxRubiconAddress.Text);
             buffer[0] = 0x01;   // packet start identifier
             buffer[1] = Convert.ToByte(controller_interface_address & 0xff);   // receiver rs485 address reader
             buffer[2] = Convert.ToByte(rs485_interface_address & 0xff);   // sender rs485 address PC

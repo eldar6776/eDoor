@@ -17,3 +17,13 @@ G:\ProjektiOtvoreni\Coloseum\sw\rfid\RubiconCtrlConf\obj\x86\Release\rfid.csproj
 G:\ProjektiOtvoreni\Coloseum\sw\rfid\RubiconCtrlConf\obj\x86\Release\rfid.csproj.CoreCompileInputs.cache
 G:\ProjektiOtvoreni\Coloseum\sw\rfid\RubiconCtrlConf\obj\x86\Release\rfid.exe
 G:\ProjektiOtvoreni\Coloseum\sw\rfid\RubiconCtrlConf\obj\x86\Release\rfid.pdb
+D:\ProjektiOtvoreni\eDoor\sw\rfid\RubiconCtrlConf\bin\Release\rfid.exe.config
+D:\ProjektiOtvoreni\eDoor\sw\rfid\RubiconCtrlConf\bin\Release\rfid.exe
+D:\ProjektiOtvoreni\eDoor\sw\rfid\RubiconCtrlConf\bin\Release\rfid.pdb
+D:\ProjektiOtvoreni\eDoor\sw\rfid\RubiconCtrlConf\obj\x86\Release\rfid.csproj.AssemblyReference.cache
+D:\ProjektiOtvoreni\eDoor\sw\rfid\RubiconCtrlConf\obj\x86\Release\RubiconCtrlConf.Form1.resources
+D:\ProjektiOtvoreni\eDoor\sw\rfid\RubiconCtrlConf\obj\x86\Release\rfid.Properties.Resources.resources
+D:\ProjektiOtvoreni\eDoor\sw\rfid\RubiconCtrlConf\obj\x86\Release\rfid.csproj.GenerateResource.cache
+D:\ProjektiOtvoreni\eDoor\sw\rfid\RubiconCtrlConf\obj\x86\Release\rfid.csproj.CoreCompileInputs.cache
+D:\ProjektiOtvoreni\eDoor\sw\rfid\RubiconCtrlConf\obj\x86\Release\rfid.exe
+D:\ProjektiOtvoreni\eDoor\sw\rfid\RubiconCtrlConf\obj\x86\Release\rfid.pdb
