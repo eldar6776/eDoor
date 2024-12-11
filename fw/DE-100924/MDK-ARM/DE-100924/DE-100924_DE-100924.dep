@@ -162,7 +162,7 @@ I (../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h)(0x66504768)
 I (../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h)(0x66504768)
 I (../Common/common.h)(0x66E2DF68)
 I (../Core/Inc/rfid.h)(0x66E2B972)
-F (../Core/Src/main.c)(0x66EC3A9C)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F0xx_HAL_Driver/Inc -I ../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I ../Drivers/CMSIS/Include -I ../Common-I.\RTE\_DE-100924-IG:\Repository\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IG:\Repository\Packs\Keil\STM32F0xx_DFP\2.1.1\Drivers\CMSIS\Device\ST\STM32F0xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F030x6 -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F030x6 -DCARD_STACKER -DAPPLICATION -DUSE_WATCHDOG-o de-100924\main.o --omf_browse de-100924\main.crf --depend de-100924\main.d)
+F (../Core/Src/main.c)(0x675049EF)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F0xx_HAL_Driver/Inc -I ../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I ../Drivers/CMSIS/Include -I ../Common-I.\RTE\_DE-100924-IG:\Repository\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IG:\Repository\Packs\Keil\STM32F0xx_DFP\2.1.1\Drivers\CMSIS\Device\ST\STM32F0xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F030x6 -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F030x6 -DCARD_STACKER -DAPPLICATION -DUSE_WATCHDOG-o de-100924\main.o --omf_browse de-100924\main.crf --depend de-100924\main.d)
 I (../Core/Inc/main.h)(0x66E18565)
 I (../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h)(0x66504768)
 I (../Core/Inc/stm32f0xx_hal_conf.h)(0x66E17F62)

@@ -62,7 +62,7 @@ typedef enum
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-
+//#define CLEAR_EEPROM
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
