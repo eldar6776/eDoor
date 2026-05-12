@@ -1,93 +1,190 @@
 # eDoor
 
-Sistem za kontrolu vrata baziran na **125 kHz RFID čitaču** i **RS485 komunikacionoj sabirnici**. Repo sadrži firmware za mikrokontroler, hardverski dizajn ploče, desktop alat za konfiguraciju i prateću dokumentaciju za razvoj RFID/door access uređaja.
+<p align="center">
+  <img alt="Platform" src="https://img.shields.io/badge/platform-STM32F0-blue">
+  <img alt="RFID" src="https://img.shields.io/badge/RFID-125%20kHz-success">
+  <img alt="Protocol" src="https://img.shields.io/badge/bus-RS485-informational">
+  <img alt="Desktop App" src="https://img.shields.io/badge/desktop-Windows%20Forms-5C2D91">
+  <img alt="Framework" src="https://img.shields.io/badge/.NET-Framework%204.8-512BD4">
+  <img alt="Hardware" src="https://img.shields.io/badge/hardware-Altium%20Designer-A5915F">
+  <img alt="Firmware" src="https://img.shields.io/badge/firmware-Keil%20MDK--ARM-red">
+  <img alt="Config" src="https://img.shields.io/badge/config-STM32CubeMX-03234B">
+</p>
 
-## Šta je ovo
+Operational access control system based on a **125 kHz RFID reader**, **STM32 firmware**, and an **RS485 control bus**. The repository contains production-oriented firmware, hardware design files, a Windows configuration utility, and supporting technical documentation used to develop and maintain the eDoor platform.
 
-`eDoor` je embedded/hardware projekat za kontrolu pristupa. Uređaj očitava 125 kHz RFID kartice, provjerava ih prema listi sačuvanoj u EEPROM memoriji, evidentira događaje i upravlja bravom preko lokalne logike uređaja. Komunikacija i nadzor se rade preko **RS485** magistrale, a u repozitoriju postoji i Windows aplikacija za slanje komandi kontroleru.
+---
 
-Na osnovu sadržaja repozitorija, projekat obuhvata:
+## Overview
 
-- **firmware** za STM32 mikrokontroler
-- **RFID logiku** baziranu na HTRC110 / EM4102 125 kHz pristupu
-- **upravljanje memorijom** kartica i logova u EEPROM-u
-- **RS485 komandni protokol** za konfiguraciju i nadzor
-- **desktop konfigurator** za Windows
-- **PCB/schematic** fajlove i fabrication output pakete
-- **datasheetove i referentnu dokumentaciju** za razvoj hardvera
+`eDoor` is a field-deployed door access control platform designed for RFID-based identification, local decision making, event logging, and remote management over an RS485 network.
 
-## Glavne funkcionalnosti
+Based on the repository contents, the system includes:
 
-- očitavanje 125 kHz RFID kartica
-- validacija kartica iz memorije uređaja
-- vođenje evidencije događaja
-- upravljanje bravom vrata
-- uključivanje/isključivanje buzzera
-- podešavanje vremena uređaja
-- dodavanje i brisanje kartica
-- brisanje logova događaja
-- restart pojedinačnog uređaja ili više uređaja preko RS485 mreže
-- PC alat za testiranje i administraciju komandi
+- embedded firmware for an **STM32F0** microcontroller platform
+- **125 kHz RFID** reader logic based on the **HTRC110 / EM4102** approach
+- **EEPROM-backed** storage for cards, configuration, and event logs
+- an **RS485 command protocol** for monitoring and control
+- a **Windows desktop utility** for communication, testing, and administration
+- complete **hardware design files** for PCB, schematic, and fabrication outputs
+- supporting **datasheets, reference designs, and development documentation**
 
-## Struktura repozitorija
+## Core Capabilities
+
+- reading 125 kHz RFID cards/tags
+- validating cards against locally stored data
+- door lock control
+- buzzer control
+- real-time and stored event handling
+- time configuration from the host application
+- adding and removing RFID cards
+- reading and deleting stored event logs
+- restarting one controller or multiple controllers on the RS485 bus
+- PC-based service and configuration workflow
+
+## System in the Field
+
+```text
+                    +-----------------------------------+
+                    |          Supervisory PC           |
+                    |  Windows Forms Service Utility    |
+                    +-----------------+-----------------+
+                                      |
+                                      | RS485 bus
+                                      |
+          ---------------------------------------------------------------
+             |                         |                         |
+             |                         |                         |
++------------v-----------+ +-----------v------------+ +----------v------------+
+|   eDoor Controller     | |   eDoor Controller     | |   eDoor Controller    |
+|   Door / Entry Point   | |   Door / Entry Point   | |   Door / Entry Point  |
++------------+-----------+ +-----------+------------+ +----------+------------+
+             |                         |                         |
+   +---------+---------+     +---------+---------+     +---------+---------+
+   | 125 kHz RFID      |     | 125 kHz RFID      |     | 125 kHz RFID      |
+   | reader front-end  |     | reader front-end  |     | reader front-end  |
+   +-------------------+     +-------------------+     +-------------------+
+             |                         |                         |
+   +---------+---------+     +---------+---------+     +---------+---------+
+   | EEPROM / logs /   |     | EEPROM / logs /   |     | EEPROM / logs /   |
+   | local card store  |     | local card store  |     | local card store  |
+   +-------------------+     +-------------------+     +-------------------+
+             |                         |                         |
+   +---------+---------+     +---------+---------+     +---------+---------+
+   | Lock output /     |     | Lock output /     |     | Lock output /     |
+   | buzzer / signaling|     | buzzer / signaling|     | buzzer / signaling|
+   +-------------------+     +-------------------+     +-------------------+
+```
+
+## Repository Structure
 
 ```text
 .
-├── doc/   # datasheetovi, reference design dokumenti, slike, RS485 protokol
-├── fw/    # firmware projekti i build artefakti
-├── hw/    # Altium hardware projekti, PCB, šeme i fabrication output
-├── sw/    # desktop software za komunikaciju sa uređajem
+├── doc/   # Datasheets, reference design material, images, protocol notes
+├── fw/    # Firmware projects, revisions, build outputs, and archives
+├── hw/    # Altium hardware projects, PCB, schematic, BOM, fabrication files
+├── sw/    # Desktop software for communication and device configuration
 └── README.md
 ```
 
-### `fw/`
-Firmware direktorij sadrži više verzija projekta (`DE-071124`, `DE-100924`, `DE-290624`) i arhivu izvornog koda.
+## Firmware
 
-Najkompletnija novija struktura vidi se u `fw/DE-100924/`:
+The `fw/` directory contains multiple project revisions, including:
 
-- `Core/` – glavna aplikaciona logika
-- `Drivers/` – STM32 HAL i CMSIS
-- `Common/` – zajednički pomoćni kod
-- `MDK-ARM/` – Keil/MDK-ARM projekat i build fajlovi
-- `DE-100924.ioc` – STM32CubeMX konfiguracija
+- `DE-071124`
+- `DE-100924`
+- `DE-290624`
+- `eDoor-main.zip`
 
-Iz sadržaja fajlova može se zaključiti da firmware koristi:
+The most complete and recent firmware structure is visible in `fw/DE-100924/`, which contains:
 
-- **STM32F0** platformu
-- **Keil MDK-ARM** toolchain
-- **STM32CubeMX** za generisanje perifernih postavki
-- **I2C EEPROM** za pohranu kartica i logova
-- posebne module poput:
+- `Core/` – main application logic
+- `Drivers/` – STM32 HAL and CMSIS components
+- `Common/` – shared support code
+- `MDK-ARM/` – Keil project and build outputs
+- `DE-100924.ioc` – STM32CubeMX configuration
+
+From the code and project files, the firmware stack includes:
+
+- **STM32F0** MCU family
+- **Keil MDK-ARM** build environment
+- **STM32CubeMX** project configuration
+- **I2C EEPROM** storage for cards and logs
+- dedicated modules such as:
   - `rfid.c/.h`
   - `eeprom.c/.h`
   - `logger.*`
   - `main.*`
 
-### `hw/`
-Hardverski dio sadrži više revizija PCB projekta, uključujući fajlove kao što su:
+### Firmware Functional Blocks
 
-- `.SchDoc` – šeme
+#### RFID Processing
+The firmware contains an RFID state machine in `rfid.c` / `rfid.h` for initialization and tag processing. The implementation references the **HTRC110** operating model and is aligned with a 125 kHz RFID reader design.
+
+#### EEPROM Storage
+The `eeprom.c/.h` module manages external EEPROM access over I2C. The memory map defines dedicated areas for:
+
+- system configuration
+- door timing configuration
+- RFID card list
+- event log list
+
+#### Event Handling
+The firmware structure and command interface indicate support for:
+
+- event counting
+- retrieval of the last logged event
+- deletion of the latest event
+- full event memory clearing
+
+This is consistent with a deployed access-control workflow where event history is retained locally on the controller.
+
+## Hardware
+
+The `hw/` directory contains multiple hardware revisions and manufacturing outputs. The latest visible revision includes files such as:
+
+- `.SchDoc` – schematics
 - `.PcbDoc` – PCB layout
-- `.PrjPcb` – Altium projekat
-- `.BomDoc` – bill of materials dokumenti
-- `.pdf` i `3D.pdf` – izvezeni pregledi dizajna
-- fabrication zip pakete za proizvodnju
+- `.PrjPcb` – Altium project
+- `.BomDoc` – bill of materials documentation
+- `.pdf` and `_3D.pdf` – exported design views
+- fabrication output archives
 
-To ukazuje da je projekat razvijan u **Altium Designer** okruženju.
+This indicates that the hardware has been developed in **Altium Designer** and maintained through multiple board revisions.
 
-### `sw/`
-Softverski alat u `sw/rfid/` je **Windows Forms** aplikacija u C#.
+Based on the repository structure and documentation set, the hardware platform includes:
 
-Karakteristike:
+- STM32 microcontroller section
+- 125 kHz RFID analog front-end / reader section
+- RS485 communication interface
+- lock control output stage
+- buzzer / status signaling
+- external EEPROM
+- supporting power and protection circuitry
 
-- Visual Studio solution: `sw/rfid/rfid.sln`
-- glavna aplikacija: `sw/rfid/RubiconCtrlConf/`
+## Desktop Application
+
+The `sw/rfid/` directory contains a **C# Windows Forms** application used to communicate with controllers over a serial/RS485 interface.
+
+### Application Stack
+
+- solution file: `sw/rfid/rfid.sln`
+- main project: `sw/rfid/RubiconCtrlConf/`
 - target framework: **.NET Framework 4.8**
-- serijska komunikacija preko COM porta
-- izbor komandi preko GUI interfejsa
-- prikaz odgovora kontrolera i real-time događaja
+- UI technology: **Windows Forms**
+- communication: serial COM port with RS485-connected devices
 
-Aplikacija omogućava slanje komandi kao što su:
+### Main Functions
+
+The application supports:
+
+- selecting COM port and baud rate
+- selecting controller and application addresses
+- sending control and diagnostic commands
+- displaying controller responses
+- displaying real-time event notifications
+
+Commands visible in the desktop application include:
 
 - `GET_SYS_FLAG`
 - `GET_CARD_CNT`
@@ -110,44 +207,25 @@ Aplikacija omogućava slanje komandi kao što su:
 - `RESTART_ONE`
 - `RESTART_ALL`
 
-### `doc/`
-Dokumentacija uključuje datasheetove i referentne materijale vezane za:
+## RS485 Protocol
 
-- **HTRC110**
-- 125 kHz RFID antene i analogni front-end
-- RDM6300 reference
-- MOSFET/zaštitne komponente
-- napajanje i pomoćne sklopove
-- slike prototipa i razvojne materijale
-- tekstualni opis **RS485 protokola**
+The repository includes a protocol note in `doc/rs485_protokol.txt`, while the Windows utility provides an implementation-oriented view of the packet format and command set.
 
-## Arhitektura sistema
+### Packet Layout
 
-Na visokom nivou projekat izgleda ovako:
+The documented packet structure is centered around:
 
-1. RFID front-end očitava 125 kHz karticu.
-2. Firmware dekodira i obrađuje ID kartice.
-3. Kartica se poredi sa zapisima u EEPROM memoriji.
-4. Ako je validna, aktivira se izlaz za bravu.
-5. Događaj se upisuje u memoriju logova.
-6. Sistem može biti nadziran i konfigurisan preko RS485 magistrale.
-7. PC aplikacija šalje komande i čita odgovore uređaja.
+- `SOH` (`0x01`) as start-of-header
+- receiver/controller address
+- payload length
+- command byte
+- optional parameter bytes
+- 16-bit checksum
+- `EOT` (`0x04`) as end-of-transmission
 
-## RS485 protokol
+### Documented Commands
 
-Repo sadrži opis protokola u fajlu `doc/rs485_protokol.txt`.
-
-Osnovni format paketa je:
-
-- **BAJT 0** = `SOH` (`0x01`)
-- **BAJT 1** = adresa čitača
-- **BAJT 2** = dužina paketa
-- **BAJT 3** = komanda
-- **BAJT 4...** = parametri (npr. broj kartice ili vrijeme)
-- **zadnja 2 bajta prije kraja** = checksum
-- **zadnji bajt** = `EOT` (`0x04`)
-
-Komande definisane u dokumentaciji uključuju npr.:
+The protocol documentation includes commands such as:
 
 - `GET_SYS_FLAG`
 - `GET_CARD_CNT`
@@ -163,102 +241,84 @@ Komande definisane u dokumentaciji uključuju npr.:
 - `DELETE_EVENT_LAST`
 - `DELETE_EVENT_ALL`
 
-Napomena: desktop aplikacija i tekstualna dokumentacija pokazuju da je protokol vjerovatno evoluirao kroz više verzija, pa prije upotrebe treba uskladiti konkretan firmware build i PC alat.
+### Commands Implemented in the PC Utility
 
-## Firmware detalji
+The Windows application also shows an actively used command model with operations for:
 
-Iz dostupnog koda se vidi nekoliko važnih podsistema:
+- card presence lookup
+- door opening
+- door enable/disable
+- buzzer enable/disable
+- single/all controller restart
+- event retrieval and event deletion workflow
 
-### RFID modul
-Firmware sadrži `rfid.c` i `rfid.h`, gdje je implementirana state machine logika za inicijalizaciju i očitavanje RFID taga. Kod referencira **HTRC110** način rada i obradu 125 kHz RFID ulaza.
+The protocol appears to have evolved across firmware and software revisions, so practical deployment should pair the desktop tool with the intended firmware revision.
 
-### EEPROM modul
-`eeprom.c/.h` implementira čuvanje podataka u eksternom EEPROM-u preko I2C-a. Definisani su posebni memorijski opsezi za:
+## Documentation Set
 
-- sistemsku konfiguraciju
-- vrijeme brave
-- listu RFID kartica
-- listu logovanih događaja
+The `doc/` directory contains supporting engineering material, including references related to:
 
-### Logovanje i upravljanje događajima
-Na osnovu imenovanja modula i komandnog interfejsa, firmware podržava brojanje, čitanje i brisanje događaja, što je tipično za access-control uređaje.
+- **HTRC110**
+- 125 kHz RFID design and antenna tuning
+- RDM6300 reference material
+- MOSFET and protection components
+- power-related supporting devices
+- photos and design notes
+- RS485 protocol description
 
-## Hardverski detalji
+This documentation base is useful both for maintenance of the current platform and for future hardware/firmware revisions.
 
-Po strukturi repozitorija i priloženoj dokumentaciji, hardver vjerovatno uključuje:
+## Development Environment
 
-- STM32 mikrokontroler
-- 125 kHz RFID analogni front-end / reader stage
-- RS485 komunikacioni interfejs
-- izlaz za upravljanje bravom
-- buzzer i signalizaciju
-- eksterni EEPROM
-- pomoćne zaštitne i napojne komponente
+### Firmware Tools
 
-Tačan spisak komponenti i konekcija treba provjeriti u `hw/DE-150824/` i PDF izvozu šema/PCB-a.
-
-## Kako otvoriti projekat
-
-### Firmware
-Za firmware će ti najvjerovatnije trebati:
+To work with the firmware, the repository is structured around:
 
 - **Keil MDK-ARM**
 - **STM32CubeMX**
-- po potrebi **STM32CubeProgrammer** za programiranje MCU-a
+- optionally **STM32CubeProgrammer** for device programming
 
-Koraci:
+Suggested entry points:
 
-1. Otvori `fw/DE-100924/DE-100924.ioc` u STM32CubeMX ako želiš pregled konfiguracije periferija.
-2. Otvori Keil projekat unutar `fw/DE-100924/MDK-ARM/` za build i debug.
-3. Pregledaj `Core/` i `Common/` za aplikacionu logiku.
+1. Open `fw/DE-100924/DE-100924.ioc` in STM32CubeMX to inspect peripheral configuration.
+2. Open the Keil project inside `fw/DE-100924/MDK-ARM/` for build and debug.
+3. Review `Core/` and `Common/` for the main application logic.
 
-### Hardware
-Za hardverski dio će ti trebati:
+### Hardware Tools
+
+To inspect and modify the hardware design, use:
 
 - **Altium Designer**
 
-Otvori odgovarajući projekat unutar npr. `hw/DE-150824/`.
+Start with one of the hardware revisions under `hw/`, for example `hw/DE-150824/`.
 
-### Desktop aplikacija
-Za PC alat će ti trebati:
+### Desktop Tools
+
+To build the service/configuration utility, use:
 
 - **Visual Studio**
 - **.NET Framework 4.8 Developer Pack**
 
-Koraci:
+Suggested steps:
 
-1. Otvori `sw/rfid/rfid.sln`
-2. Buildaj projekat `RubiconCtrlConf`
-3. Poveži se na odgovarajući COM port
-4. Podesi baudrate i RS485 adrese
-5. Pošalji željenu komandu uređaju
+1. Open `sw/rfid/rfid.sln`
+2. Build the `RubiconCtrlConf` project
+3. Connect to the correct COM port / RS485 interface
+4. Set the desired baud rate and node addresses
+5. Send and monitor controller commands
 
-## Status repozitorija
+## Repository Contents at a Glance
 
-Repo izgleda kao **realan razvojni repozitorij proizvoda/prototipa**, a ne kao ispoliran open-source paket. To znači da sadrži i:
+This repository is maintained as a real engineering project and includes:
 
-- više hardverskih i firmware revizija
-- build artefakte
-- zip arhive
-- vendor drivere
-- bin/obj/.vs foldere
-- internu projektnu dokumentaciju
+- multiple firmware revisions
+- multiple hardware revisions
+- vendor driver packages
+- build outputs and archives
+- desktop tooling
+- board documentation and fabrication data
+- protocol and component reference material
 
-Zbog toga je dobar za razvoj i arhiviranje projekta, ali bi za širu open-source upotrebu vjerovatno koristilo dodatno čišćenje strukture i dopuna dokumentacije.
+## Notes
 
-## Preporuke za dalje
-
-Ako želiš da repo bude lakši za korištenje drugima, korisno bi bilo dodati još:
-
-- blok dijagram sistema
-- fotografije gotove ploče i konektora
-- listu podržanih RFID kartica/tagova
-- mapu pinova i konektora
-- opis napajanja i izlaza brave
-- jasnu proceduru za flash firmware-a
-- primjer RS485 paketa zahtjev/odgovor
-- changelog po hardverskim/firmware revizijama
-
-## Napomena
-
-README je sastavljen analizom dostupne strukture repozitorija, konfiguracionih fajlova i dijela izvornog koda. Neki detalji hardvera i tačan deployment postupak mogu se razlikovati po reviziji projekta, pa ih treba potvrditi direktno iz šema, PCB fajlova i firmware konfiguracije.
+This README is written to reflect the repository as an operational access-control platform rather than a demonstration project. Device photos and installation images can be added later to complement the technical documentation and field presentation of the system.
